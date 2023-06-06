@@ -1,21 +1,31 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-6 p-2">
-      <input type="text" class="form-control" placeholder="Digite o nome do card" aria-label="First name">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Digite o nome do card"
+        aria-label="First name"
+      />
     </div>
     <div class="col-6">
-      <button type="button" class="btn btn-primary btn-lg mt-2 p-1" (click)="getData()">Mostrar cards</button>
+      <button
+        type="button"
+        class="btn btn-primary btn-lg mt-2 p-1"
+        (click)="getData()"
+      >
+        Mostrar cards
+      </button>
     </div>
   </div>
   <div *ngIf="websiteData">
     <div class="card" *ngFor="let card of websiteData.cards">
-      <div class="card-header">
+      <ng-container *ngIf="card.imageUrl">
         {{ card.name }}
-      </div>
-      <img [src]="card.imageUrl" alt="Card Image">
-      <div class="card-body">
-        <p>{{ card.imageUrl }}</p>
-      </div>
+        <img [src]="card.imageUrl" alt="Card Image" style="width: 250px;">
+        <h5 class="card-title">Dados da classe:</h5>
+        <p class="card-text"  *ngIf="classData">{{ classData }}</p>
+      </ng-container>
     </div>
   </div>
 </div>

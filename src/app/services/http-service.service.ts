@@ -10,6 +10,12 @@ export class HttpServiceService {
 
   getWebsiteData() {
     return this.http.get('https://api.magicthegathering.io/v1/cards');
+    
+  }
+
+  getWebsiteDataClass() {
+    return this.http.get('https://www.ligamagic.com.br');
+    
   }
   
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpServiceService } from './../services/http-service.service';
+import * as cheerio from 'cheerio';
 
 @Component({
   selector: 'app-home',
@@ -10,15 +11,26 @@ export class HomeComponent implements OnInit {
   public websiteData: any;
   public cardName: string | any;
   public filteredCards!: any[];
+  public http: any;
+  public classData: any;
 
   constructor(private httpService: HttpServiceService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   getData() {
     this.httpService.getWebsiteData().subscribe((data: any) => {
       this.websiteData = data;
       this.filterCards();
+      
+    });
+
+    this.httpService.getWebsiteDataClass().subscribe((html: any) => {
+      const $ = cheerio.load(html);
+      const element = $('.nome-principal');
+      
+      this.classData = element.text();
     });
   }
 
