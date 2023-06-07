@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col-6 p-2">
       <input
+        [(ngModel)]="cardName"
         type="text"
         class="form-control"
         placeholder="Digite o nome do card"
@@ -12,20 +13,23 @@
       <button
         type="button"
         class="btn btn-primary btn-lg mt-2 p-1"
-        (click)="getData()"
+        (click)="valueInput()"
       >
         Mostrar cards
       </button>
     </div>
   </div>
-  <div *ngIf="websiteData">
-    <div class="card" *ngFor="let card of websiteData.cards">
+  <div *ngIf="filteredCards && filteredCards.length > 0">
+    <div class="card" *ngFor="let card of filteredCards">
       <ng-container *ngIf="card.imageUrl">
-        {{ card.name }}
         <img [src]="card.imageUrl" alt="Card Image" style="width: 250px;">
         <h5 class="card-title">Dados da classe:</h5>
-        <p class="card-text"  *ngIf="classData">{{ classData }}</p>
+        <p class="card-text" *ngIf="card.classData">{{ card.classData }}</p>
       </ng-container>
     </div>
   </div>
+  <div *ngIf="filteredCards && filteredCards.length === 0">
+    Nenhum card encontrado.
+  </div>
 </div>
+

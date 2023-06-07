@@ -11,27 +11,23 @@ export class HomeComponent implements OnInit {
   public websiteData: any;
   public cardName: string | any;
   public filteredCards!: any[];
-  public http: any;
   public classData: any;
+  public myInput!: string;
 
   constructor(private httpService: HttpServiceService) {}
 
   ngOnInit() {
+    this.getData();
   }
 
   getData() {
     this.httpService.getWebsiteData().subscribe((data: any) => {
       this.websiteData = data;
-      this.filterCards();
-      
     });
+  }
 
-    this.httpService.getWebsiteDataClass().subscribe((html: any) => {
-      const $ = cheerio.load(html);
-      const element = $('.nome-principal');
-      
-      this.classData = element.text();
-    });
+  valueInput() {
+    this.filterCards();
   }
 
   filterCards() {
@@ -44,3 +40,4 @@ export class HomeComponent implements OnInit {
     }
   }
 }
+
