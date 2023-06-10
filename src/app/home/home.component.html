@@ -1,15 +1,19 @@
-<div class="container mt-5">
+<div class="container mt-5 text-center">
   <div class="row">
-    <div class="col-6 p-2">
-      <input
-        [(ngModel)]="cardName"
-        type="text"
-        class="form-control"
-        placeholder="Digite o nome do card"
-        aria-label="First name"
-      />
+    <div class="col-12 d-flex justify-content-center">
+      <div class="p-2">
+        <input
+          [(ngModel)]="cardName"
+          type="text"
+          class="form-control"
+          placeholder="Digite o nome do card"
+          aria-label="First name"
+        />
+      </div>
     </div>
-    <div class="col-6">
+  </div>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
       <button
         type="button"
         class="btn btn-primary btn-lg mt-2 p-1"
@@ -19,17 +23,24 @@
       </button>
     </div>
   </div>
-  <div *ngIf="filteredCards && filteredCards.length > 0">
-    <div class="card" *ngFor="let card of filteredCards">
-      <ng-container *ngIf="card.imageUrl">
-        <img [src]="card.imageUrl" alt="Card Image" style="width: 250px;">
-        <h5 class="card-title">Dados da classe:</h5>
-        <p class="card-text" *ngIf="card.classData">{{ card.classData }}</p>
-      </ng-container>
+  <div *ngIf="filteredCards && filteredCards.length > 0" class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="card mt-3">
+        <ng-container *ngFor="let card of filteredCards">
+          <img 
+            class="mb-3"
+            *ngIf="card.imageUrl"
+            [src]="card.imageUrl"
+            alt="Card Image"
+            style="width: 250px"
+          />
+        </ng-container>
+      </div>
     </div>
   </div>
-  <div *ngIf="filteredCards && filteredCards.length === 0">
-    Nenhum card encontrado.
+  <div *ngIf="filteredCards && filteredCards.length === 0" class="row">
+    <div class="col-12 d-flex justify-content-center mt-2">
+      Nenhum card encontrado.
+    </div>
   </div>
 </div>
-
