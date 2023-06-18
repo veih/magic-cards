@@ -1,43 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpServiceService } from './../services/http-service.service';
-import * as cheerio from 'cheerio';
+import { Component, Renderer2, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-  public websiteData: any;
-  public cardName: string | any;
-  public filteredCards!: any[];
-  public classData: any;
-  public myInput!: string;
+  public files: any = [];
+  selectedFiles: File[] = [];
 
-  constructor(private httpService: HttpServiceService) {}
+  constructor(private renderer: Renderer2) { }
 
-  ngOnInit() {
-    this.getData();
+  ngOnInit(): void {
+    const script = this.renderer.createElement('script');
+    script.src = 'assets/index.js';
+
+    this.renderer.appendChild(document.head, script);
   }
 
-  getData() {
-    this.httpService.getWebsiteData().subscribe((data: any) => {
-      this.websiteData = data;
-    });
-  }
+  handleFileInput(event: any): void {
+    this.selectedFiles = event.target.files;
+    console.log('Arquivos selecionados:', this.selectedFiles);
 
-  valueInput() {
-    this.filterCards();
-  }
-
-  filterCards() {
-    if (!this.cardName || this.cardName.trim() === '') {
-      this.filteredCards = this.websiteData.cards;
-    } else {
-      this.filteredCards = this.websiteData.cards.filter((card: { name: string }) =>
-        card.name.toLowerCase().includes(this.cardName.toLowerCase())
-      );
-    }
+    // Realize as operações de sistema de arquivos desejadas aqui, como leitura, gravação, etc.
   }
 }
-
