@@ -1,27 +1,22 @@
-# Basic API routes example
+# Nextjs 13.4 + web scraping (Puppeteer)
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`. This example shows how to create multiple `API` endpoints with serverless functions, which can execute independently.
+<img align="left" alt="NextJS" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
 
-## Deploy your own
+<img align="left" alt="puppeteer" width="50px" style="padding-right:10px;" src="https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png" />
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes)
+<img align="left" alt="TypeScript" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes&project-name=api-routes&repository-name=api-routes)
+<img align="left" alt="TypeScript" width="50px" style="padding-right:10px;" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" />
 
-## How to use
+<img align="left" alt="Tailwind" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+<br/>
+<br/>
+<br/>
+<br/>
 
-```bash
-npx create-next-app --example api-routes api-routes-app
-```
+# YT
 
-```bash
-yarn create next-app --example api-routes api-routes-app
-```
+[![Next.js and Puppeteer for Data Extraction: Web Scrapping](https://ytcards.demolab.com/?id=uOF6RzKPutE&title=Next.js+and+Puppeteer+for+Data+Extraction%3A+Web+Scrapping&lang=en&timestamp=1685044815&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=250 "Next.js and Puppeteer for Data Extraction: Web Scrapping")](https://www.youtube.com/watch?v=uOF6RzKPutE)
 
-```bash
-pnpm create next-app --example api-routes api-routes-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Web scrapping is an automated process that extracts data from a website and exports it in a structured format. This can be very useful for in case the public site which you want to access data from does not have an api. 
