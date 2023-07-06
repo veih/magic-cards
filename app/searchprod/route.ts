@@ -15,7 +15,7 @@ export async function POST(request: Request): Promise<Response> {
 	let browser: any;
 
 	try {
-		await new Promise((resolve) => setTimeout(resolve, 5000)); // Aguarda 10 segundos
+		await new Promise((resolve) => setTimeout(resolve, 5000)); 
 
 		browser = await puppeteer.launch({ headless: "new" });
 		const page = await browser.newPage();
@@ -24,19 +24,19 @@ export async function POST(request: Request): Promise<Response> {
 		await page.keyboard.press("Enter");
 		await page.waitForNavigation();
 
-		const html = await page.content(); //obtém o conteúdo HTML completo
-		const $ = cheerio.load(html); //carrega o conteúdo HTML
+		const html = await page.content(); 
+		const $ = cheerio.load(html); 
 
 		const products: { price: string; title: string; imageUrl: string }[] = [];
 
 		$(".mtg-prices").each((_index, element) => {
 			const price = $(element).text().trim();
-			products.push({ price, title: "", imageUrl: "" });
+			products.push({ price, title: "", imageUrl: "src" });
 		});
 
 		const imageUrls: string[] = [];
 
-		$("img.main-card").each((_index, element) => {
+		$("a > img > data-src").each((_index, element) => {
 			const imageUrl = $(element).attr("src");
 			imageUrls.push(imageUrl || "");
 		});

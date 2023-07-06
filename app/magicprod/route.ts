@@ -13,23 +13,24 @@ export async function GET(request: Request) {
 		const html = await page.content(); //get the entire html content
 		const $ = cheerio.load(html); //load the html content
 
-		const prices = $(".mtg-prices")
-			.each((_index: any, element: any) => {
-				return $(element).text();
-			})
-			.get();
+		const products: { price: string; title: string; imageUrl: string }[] = [];
 
-		const titles = $(".mtg-info")
-			.each((_index, element) => {
-				return $(element).text();
-			})
-			.get();
+		$(".mtg-prices").each((_index, element) => {
+			const price = $(element).text().trim();
+			products.push({ price, title: "", imageUrl: "src" });
+		});
 
-		// const reviews = $("span.a-size-base.s-underline-text")
-		// 	.each((index, element) => {
-		// 		return $(element).text();
-		// 	})
-		// 	.get();
+		$("a > img > data-src").each((_index, element) => {
+			const imageUrl = $(element).attr("src");
+			imageUrls.push(imageUrl || "");
+		});
+
+		const titles: string[] = [];
+
+		$(".mtg-info").each((_index, element) => {
+			const title = $(element).text().trim();
+			titles.push(title);
+		});
 
 			const imageUrls = $(".main-card")
 			.each((_index, element) => {
@@ -39,20 +40,15 @@ export async function GET(request: Request) {
 
 		const data = [];
 
-		for (let i = 0; i < titles.length; i++) {
-			const item = {
-				price: prices[i],
-				title: titles[i],
-				// review: reviews[i],
-				imageUrl: imageUrls[i],
-			};
-			data.push(item);
+		for (let i = 0; i < products.length; i++) {
+			products[i].imageUrl = imageUrls[i] || "";
+			products[i].title = titles[i] || "";
 		}
 
-		return NextResponse.json(data);
-	} catch (error) {
+		return NextResponse.json({ products });
+	} catch (error: any) {
 		return NextResponse.json(
-			{ error: "Something went wrong" },
+			{ error: `An error occurred: ${error.message}` },
 			{ status: 200 }
 		);
 	} finally {
