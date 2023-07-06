@@ -75,7 +75,6 @@ export default function Home() {
 							/>
 						</div>
 						<div className="flex m-2 justify-between">
-							<p>Reviews : {prod.review}</p>
 							<p>Price : {prod.price}</p>
 						</div>
 					</div>

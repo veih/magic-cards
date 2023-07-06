@@ -8,31 +8,31 @@ export async function GET(request: Request) {
 		browser = await puppeteer.launch();
 		const page = await browser.newPage();
 		await page.goto(
-			"https://www.ligamagic.com.br/?view=cards/edicoes"
+			"https://www.ligamagic.com.br/"
 		);
 		const html = await page.content(); //get the entire html content
 		const $ = cheerio.load(html); //load the html content
 
-		const prices = $(".box p10 box-card-view.card-principal.margin-default.mobile-precomedio.precos-edicoes")
-			.map((index: any, element: any) => {
+		const prices = $(".mtg-prices")
+			.each((_index: any, element: any) => {
 				return $(element).text();
 			})
 			.get();
 
-		const titles = $("p.nome-principal")
-			.map((index: any, element: any) => {
+		const titles = $(".mtg-info")
+			.each((_index, element) => {
 				return $(element).text();
 			})
 			.get();
 
 		// const reviews = $("span.a-size-base.s-underline-text")
-		// 	.map((index, element) => {
+		// 	.each((index, element) => {
 		// 		return $(element).text();
 		// 	})
 		// 	.get();
 
-		const imageUrls = $("img.main-card")
-			.map((index, element) => {
+			const imageUrls = $(".main-card")
+			.each((_index, element) => {
 				return $(element).attr("src");
 			})
 			.get();

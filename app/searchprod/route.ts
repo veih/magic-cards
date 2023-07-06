@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import puppeteer from "puppeteer";
 import * as cheerio from "cheerio";
 
-export async function POST(request: Request) {
+export async function POST(request: Request): Promise<Response> {
 	const { searchPrompt: userSearch } = await request.json();
 
 	if (!userSearch) {
@@ -11,53 +11,46 @@ export async function POST(request: Request) {
 			{ status: 400 }
 		);
 	}
-	let browser;
+
+	let browser: any;
 
 	try {
+		await new Promise((resolve) => setTimeout(resolve, 5000)); // Aguarda 10 segundos
+
 		browser = await puppeteer.launch({ headless: "new" });
 		const page = await browser.newPage();
-		await page.goto("https://www.ligamagic.com.br/");
-		await page.type("#header-mainsearch", userSearch);
+		await page.goto("https://www.ligamagic.com.br");
+		await page.type("#mainsearch", userSearch);
 		await page.keyboard.press("Enter");
 		await page.waitForNavigation();
 
-		const html = await page.content(); //get the entire html content
-		const $ = cheerio.load(html); //load the html content
+		const html = await page.content(); //obtém o conteúdo HTML completo
+		const $ = cheerio.load(html); //carrega o conteúdo HTML
 
-		const prices = $(".box p10 box-card-view.card-principal.margin-default.mobile-precomedio.precos-edicoes")
-			.map((index, element) => {
-				return $(element).text();
-			})
-			.get();
+		const products: { price: string; title: string; imageUrl: string }[] = [];
 
-		const titles = $("span.a-size-base-plus.a-color-base.a-text-normal")
-			.map((index, element) => {
-				return $(element).text();
-			})
-			.get();
+		$(".mtg-prices").each((_index, element) => {
+			const price = $(element).text().trim();
+			products.push({ price, title: "", imageUrl: "" });
+		});
 
-		const reviews = $("span.a-size-base.s-underline-text")
-			.map((index, element) => {
-				return $(element).text();
-			})
-			.get();
+		const imageUrls: string[] = [];
 
-		const imageUrls = $("img.main-card")
-			.map((index, element) => {
-				return $(element).attr("src");
-			})
-			.get();
+		$("img.main-card").each((_index, element) => {
+			const imageUrl = $(element).attr("src");
+			imageUrls.push(imageUrl || "");
+		});
 
-		const products = [];
+		const titles: string[] = [];
 
-		for (let i = 0; i < titles.length; i++) {
-			const item = {
-				price: prices[i],
-				title: titles[i],
-				review: reviews[i],
-				imageUrl: imageUrls[i],
-			};
-			products.push(item);
+		$(".mtg-info").each((_index, element) => {
+			const title = $(element).text().trim();
+			titles.push(title);
+		});
+
+		for (let i = 0; i < products.length; i++) {
+			products[i].imageUrl = imageUrls[i] || "";
+			products[i].title = titles[i] || "";
 		}
 
 		return NextResponse.json({ products });
