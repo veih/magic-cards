@@ -10,8 +10,8 @@ export async function GET(request: Request) {
 		await page.goto(
 			"https://www.ligamagic.com.br/"
 		);
-		const html = await page.content(); //get the entire html content
-		const $ = cheerio.load(html); //load the html content
+		const html = await page.content(); 
+		const $ = cheerio.load(html); 
 
 		const products: { price: string; title: string; imageUrl: string }[] = [];
 

@@ -1,67 +1,70 @@
 import { NextResponse } from "next/server";
 import puppeteer from "puppeteer";
-import * as cheerio from "cheerio";
+const cheerio = require("cheerio");
 
 export async function POST(request: Request): Promise<Response> {
-	const { searchPrompt: userSearch } = await request.json();
+  const { searchPrompt: userSearch } = await request.json();
 
-	if (!userSearch) {
-		return NextResponse.json(
-			{ error: "Search parameter not provided" },
-			{ status: 400 }
-		);
-	}
+  if (!userSearch) {
+    return NextResponse.json(
+      { error: "Search parameter not provided" },
+      { status: 400 }
+    );
+  }
 
-	let browser: any;
+  let browser: any;
 
-	try {
-		await new Promise((resolve) => setTimeout(resolve, 5000)); 
+  try {
+    //await new Promise((resolve) => setTimeout(resolve, 5000));
 
-		browser = await puppeteer.launch({ headless: "new" });
-		const page = await browser.newPage();
-		await page.goto("https://www.ligamagic.com.br");
-		await page.type("#mainsearch", userSearch);
-		await page.keyboard.press("Enter");
-		await page.waitForNavigation();
+    browser = await puppeteer.launch({ headless: "new" });
+    const page = await browser.newPage();
+    await page.goto("https://www.ligamagic.com.br");
+    await page.type("#mainsearch", userSearch);
+    await page.keyboard.press("Enter");
+    await page.waitForNavigation();
 
-		const html = await page.content(); 
-		const $ = cheerio.load(html); 
+    const html = await page.content();
+    const $ = cheerio.load(html);
 
-		const products: { price: string; title: string; imageUrl: string }[] = [];
+    const prices: string[] = [];
+    const titles: string[] = [];
+    const imageUrls: string[] = [];
 
-		$(".mtg-prices").each((_index, element) => {
-			const price = $(element).text().trim();
-			products.push({ price, title: "", imageUrl: "src" });
-		});
+    $(".mtg-prices").each((_index: any, element: any) => {
+      const price = $(element).text().trim();
+      prices.push(price);
+    });
 
-		const imageUrls: string[] = [];
+    $(".card-item > a > img").each((_index: any, element: any) => {
+      const imageUrl = $(element).attr("src");
+      imageUrls.push(imageUrl || "");
+    });
 
-		$("a > img > data-src").each((_index, element) => {
-			const imageUrl = $(element).attr("src");
-			imageUrls.push(imageUrl || "");
-		});
+    $(".mtg-info").each((_index: any, element: any) => {
+      const title = $(element).text().trim();
+      titles.push(title);
+    });
 
-		const titles: string[] = [];
+    const products = [];
 
-		$(".mtg-info").each((_index, element) => {
-			const title = $(element).text().trim();
-			titles.push(title);
-		});
+    for (let i = 0; i < prices.length; i++) {
+      products.push({
+        price: prices[i],
+        imageUrl: imageUrls[i] || "",
+        title: titles[i] || "",
+      });
+    }
 
-		for (let i = 0; i < products.length; i++) {
-			products[i].imageUrl = imageUrls[i] || "";
-			products[i].title = titles[i] || "";
-		}
-
-		return NextResponse.json({ products });
-	} catch (error: any) {
-		return NextResponse.json(
-			{ error: `An error occurred: ${error.message}` },
-			{ status: 200 }
-		);
-	} finally {
-		if (browser) {
-			await browser.close();
-		}
-	}
+    return NextResponse.json({ products });
+  } catch (error: any) {
+    return NextResponse.json(
+      { error: `An error occurred: ${error.message}` },
+      { status: 200 }
+    );
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
 }
