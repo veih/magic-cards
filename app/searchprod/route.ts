@@ -48,7 +48,7 @@ export async function POST(request: Request): Promise<Response> {
 
     const products = [];
 
-    for (let i = 0; i < titles.length; i++) {
+    for (let i = 0; i < imageUrls.length; i++) {
 			const items = {
 				price: prices[i],
 				title: titles[i],
