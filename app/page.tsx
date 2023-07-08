@@ -30,7 +30,8 @@ export default function Home() {
 		const { products } = await res.json();
 
 		console.log(products);
-		setSearchResults(products);
+		// await new Promise((resolve) => setTimeout(resolve, 10000));
+		setSearchResults( products);
 		console.log(searchResults);
 		setSearchPrompt("");
 		setIsLoading(false);

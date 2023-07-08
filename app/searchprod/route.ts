@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import puppeteer from "puppeteer";
-const cheerio = require("cheerio");
+import * as cheerio from "cheerio";
 
 export async function POST(request: Request): Promise<Response> {
   const { searchPrompt: userSearch } = await request.json();
@@ -12,7 +12,7 @@ export async function POST(request: Request): Promise<Response> {
     );
   }
 
-  let browser: any;
+  let browser;
 
   try {
     //await new Promise((resolve) => setTimeout(resolve, 5000));
@@ -27,36 +27,38 @@ export async function POST(request: Request): Promise<Response> {
     const html = await page.content();
     const $ = cheerio.load(html);
 
-    const prices: string[] = [];
-    const titles: string[] = [];
-    const imageUrls: string[] = [];
+    
+    const prices = $(".mtg-prices")
+			.map((index, element) => {
+				return $(element).text();
+			})
+			.get();
 
-    $(".mtg-prices").each((_index: any, element: any) => {
-      const price = $(element).text().trim();
-      prices.push(price);
-    });
+    const imageUrls = $("img.main-card")
+      .map((index, element) => {
+        return $(element).attr("src");
+      })
+      .get();
 
-    $(".card-item > a > img").each((_index: any, element: any) => {
-      const imageUrl = $(element).attr("src");
-      imageUrls.push(imageUrl || "");
-    });
-
-    $(".mtg-info").each((_index: any, element: any) => {
-      const title = $(element).text().trim();
-      titles.push(title);
-    });
+    const titles = $(".mtg-info")
+			.map((index, element) => {
+				return $(element).text();
+			})
+			.get();
 
     const products = [];
 
-    for (let i = 0; i < prices.length; i++) {
-      products.push({
-        price: prices[i],
-        imageUrl: imageUrls[i] || "",
-        title: titles[i] || "",
-      });
-    }
+    for (let i = 0; i < titles.length; i++) {
+			const items = {
+				price: prices[i],
+				title: titles[i],
+				imageUrl: imageUrls[i],
+			};
+			products.push(items);
+		}
 
     return NextResponse.json({ products });
+    
   } catch (error: any) {
     return NextResponse.json(
       { error: `An error occurred: ${error.message}` },
