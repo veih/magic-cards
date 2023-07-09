@@ -1,8 +1,6 @@
 "use client";
-
-import { headers } from "next/dist/client/components/headers";
 import Image from "next/image";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 
 type WSResults = {
 	price: string;
@@ -28,6 +26,7 @@ export default function Home() {
 		});
 		const { products } = await res.json();
 
+		console.log(products)
 		setSearchResults(products);
 		setSearchPrompt("");
 		setIsLoading(false);
@@ -56,7 +55,7 @@ export default function Home() {
 			<div className="grid grid-cols-3 gap-4">
 				{searchResults?.map((prod, i) => (
 					<div key={i} className="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
-						<div className="relative h-[400px]">
+						<div className="relative h-[380px]">
 							<Image
 								src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
 								alt={prod.title}
