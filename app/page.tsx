@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Image from "next/image";
 import { FormEvent, useState } from "react";
@@ -27,17 +27,16 @@ export default function Home() {
       },
     });
 
-    const starCity = await fetch("/searchprodstarcity", {
-      method: "POST",
-      body: JSON.stringify({ searchPrompt }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // const starCity = await fetch("/searchprodstarcity", {
+    //   method: "POST",
+    //   body: JSON.stringify({ searchPrompt }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
     
     const { products } = await ligaMagic.json();
 
-    console.log(products)
     setSearchResults(products);
     setSearchPrompt("");
     setIsLoading(false);
@@ -45,7 +44,7 @@ export default function Home() {
 
   return (
     <main className="max-w-5xl mx-auto flex flex-col mt-5 justify-center">
-      <form onSubmit={handleSubmit} className="flex justify-center space-x-2 my-4">
+      <form onSubmit={handleSubmit} className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-2 my-4">
         <input
           value={searchPrompt}
           onChange={(e) => setSearchPrompt(e.target.value)}
@@ -61,11 +60,9 @@ export default function Home() {
         </button>
       </form>
 
-      {isLoading &&
-        <Loading />
-      }
+      {isLoading && <Loading />}
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {searchResults?.map((prod, i) => (
           <div key={i} className="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
             <div className="relative h-[380px]">

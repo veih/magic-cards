@@ -15,7 +15,6 @@ export async function POST(request: Request): Promise<Response> {
   let browser;
 
   try {
-    //await new Promise((resolve) => setTimeout(resolve, 5000));
 
     browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
@@ -27,35 +26,25 @@ export async function POST(request: Request): Promise<Response> {
     const html = await page.content();
     const $ = cheerio.load(html);
 
-    
-    const prices = $(".mtg-prices")
-			.map((index, element) => {
-				return $(element).text();
-			})
-			.get();
+    const products: any = [];
 
-    const imageUrls = $("img.main-card")
+    const mtgSingle = $(".mtg-single")
       .map((index, element) => {
-        return $(element).attr("src");
+         
+        const title = $(element).find(".mtg-info");
+        const price = $(element).find(".mtg-prices");
+        const imgs = $(element).find("img.main-card");
+
+        const items = {
+          price: $(price[0]).text(),
+          title: $(title[0]).text(),
+          imageUrl: $(imgs[0]).attr("data-src"),
+        }
+
+        products.push(items)
+
+        return $(element).text();
       })
-      .get();
-
-    const titles = $(".mtg-info")
-			.map((index, element) => {
-				return $(element).text();
-			})
-			.get();
-
-    const products = [];
-
-    for (let i = 0; i < imageUrls.length; i++) {
-			const items = {
-				price: prices[i],
-				title: titles[i],
-				imageUrl: imageUrls[i],
-			};
-			products.push(items);
-		}
 
     return NextResponse.json({ products });
     
