@@ -21,6 +21,7 @@ export async function POST(request: Request): Promise<Response> {
     await page.goto("https://www.ligamagic.com.br");
     await page.type("#mainsearch", userSearch);
     await page.keyboard.press("Enter");
+
     await page.waitForNavigation();
 
     const html = await page.content();
@@ -50,6 +51,7 @@ export async function POST(request: Request): Promise<Response> {
     
   } catch (error: any) {
     return NextResponse.json(
+
       { error: `An error occurred: ${error.message}` },
       { status: 200 }
     );

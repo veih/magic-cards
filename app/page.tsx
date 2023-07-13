@@ -34,7 +34,7 @@ export default function Home() {
     //     "Content-Type": "application/json",
     //   },
     // });
-    
+
     const { products } = await ligaMagic.json();
 
     setSearchResults(products);
@@ -43,7 +43,7 @@ export default function Home() {
   };
 
   return (
-    <main className="max-w-5xl mx-auto flex flex-col mt-5 justify-center">
+    <main className="max-w-5xl mx-auto flex flex-col mt-2 justify-center">
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-2 my-4">
         <input
           value={searchPrompt}
