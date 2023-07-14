@@ -33,11 +33,15 @@ export async function POST(request: Request): Promise<Response> {
       .map((index, element) => {
          
         const title = $(element).find(".mtg-info");
-        const price = $(element).find(".mtg-prices");
+        const priceMin = $(element).find(".price-min");
+        const priceMed= $(element).find(".price-avg");
+        const priceMax = $(element).find(".price-max");
         const imgs = $(element).find("img.main-card");
 
         const items = {
-          price: $(price[0]).text(),
+          priceMin: $(priceMin[0]).text(),
+          priceMed: $(priceMed[0]).text(),
+          priceMax: $(priceMax[0]).text(),
           title: $(title[0]).text(),
           imageUrl: $(imgs[0]).attr("data-src"),
         }
