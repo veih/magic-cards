@@ -97,10 +97,10 @@ export default function Home() {
 
       {isLoading && <Loading />}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-1">
         {searchResults.map((prod, i) => (
-          <div key={i} className="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
-            <div className="relative w-[230px] h-[300px]">
+          <div key={i} className="bg-gray-800 bg-opacity-50 p-4 rounded-lg grid grid-cols-2 gap-2 justify-center">
+            <div className="relative h-100 w-60 mt-2" >
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={prod.title}
@@ -108,42 +108,64 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
-            <p className="text-white text-center mt-3">Liga Magic</p>
-            <div className="flex">
-              <div className="mt-2 grid grid-cols-3 gap-2">
-                <div className="text-white">
-                  <p>Mínimo</p>
-                  <p>{prod.priceMin}</p>
-                </div>
-                <div className="text-white">
-                  <p>Médio</p>
-                  <p>{prod.priceMed}</p>
-                </div>
-                <div className="text-white">
-                  <p>Máximo</p>
-                  <p>{prod.priceMax}</p>
-                </div>
-              </div>
+            <div className="flex flex-col">
+              <p className="text-white text-center mt-1">Liga Magic</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-white text-center mt-1">Star City</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-white text-center mt-1">Magic Domen</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            {/* <p className="text-white text-center">Star City</p>
-            <div className="flex justify-center">
-              <div className="mt-2">
-                <p className="text-white">{prod.priceMin}</p>
-                <p className="text-white">{prod.priceMed}</p>
-                <p className="text-white">{prod.priceMax}</p>
-              </div>
-            </div>
-            <p className="text-white text-center">Magig Gringa</p>
-            <div className="flex justify-center">
-              <div className="mt-2">
-                <p className="text-white">{prod.priceMin}</p>
-                <p className="text-white">{prod.priceMed}</p>
-                <p className="text-white">{prod.priceMax}</p>
-              </div>
-            </div> */}
+
           </div>
         ))}
       </div>
+
       <div ref={loadMoreRef}>Exibir</div>
     </main>
   );
