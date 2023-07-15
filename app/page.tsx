@@ -45,8 +45,32 @@ export default function Home() {
     setIsLoading(false);
   };
 
+  const handleMouseMove = (e: { currentTarget: { querySelector: (arg0: string) => any; }; clientX: number; clientY: number; }) => {
+    const cardImage = e.currentTarget.querySelector('.card-image');
+    const rect = cardImage.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const rotateX = (mouseY - centerY) / 10;
+    const rotateY = (mouseX - centerX) / 10;
+    
+    cardImage.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  };
+  
+  const handleMouseLeave = (e: { currentTarget: { querySelector: (arg0: string) => any; }; }) => {
+    const cardImage = e.currentTarget.querySelector('.card-image');
+    cardImage.style.transform = 'none';
+  };
+  
+
   return (
     <main className="max-w-5xl mx-auto flex flex-col mt-2 justify-center">
+      <div>
+        <p className="text-white mt-2 text-center text-2xl">Digite o nome completo da carta para facilitar sua busca</p>
+      </div>
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-2 my-4">
         <input
           value={searchPrompt}
@@ -68,69 +92,69 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-          <div className="relative h-100 w-60 mt-2">
-            <Image
-              src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
-              alt={prod.title}
-              fill
-              className="rounded-lg"
-            />
+            <div className="relative h-100 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+              <Image
+                src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
+                alt={prod.title}
+                fill
+                className="rounded-lg card-image"
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-white text-center mt-1">Liga Magic</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-white text-center mt-1">Star City</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-white text-center mt-1">Magic Domen</p>
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço mínimo</td>
+                    <td className="text-white text-right">{prod.priceMin}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço médio</td>
+                    <td className="text-white text-right">{prod.priceMed}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-white">Preço máximo</td>
+                    <td className="text-white text-right">{prod.priceMax}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p className="text-white text-center mt-1">Liga Magic</p>
-            <table className="mt-1">
-              <tbody>
-                <tr>
-                  <td className="text-white">Preço mínimo</td>
-                  <td className="text-white text-right">{prod.priceMin}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço médio</td>
-                  <td className="text-white text-right">{prod.priceMed}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço máximo</td>
-                  <td className="text-white text-right">{prod.priceMax}</td>
-                </tr>
-              </tbody>
-            </table>
-            <p className="text-white text-center mt-1">Star City</p>
-            <table className="mt-1">
-              <tbody>
-                <tr>
-                  <td className="text-white">Preço mínimo</td>
-                  <td className="text-white text-right">{prod.priceMin}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço médio</td>
-                  <td className="text-white text-right">{prod.priceMed}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço máximo</td>
-                  <td className="text-white text-right">{prod.priceMax}</td>
-                </tr>
-              </tbody>
-            </table>
-            <p className="text-white text-center mt-1">Magic Domen</p>
-            <table className="mt-1">
-              <tbody>
-                <tr>
-                  <td className="text-white">Preço mínimo</td>
-                  <td className="text-white text-right">{prod.priceMin}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço médio</td>
-                  <td className="text-white text-right">{prod.priceMed}</td>
-                </tr>
-                <tr>
-                  <td className="text-white">Preço máximo</td>
-                  <td className="text-white text-right">{prod.priceMax}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        
+
         ))}
       </div>
     </main>
