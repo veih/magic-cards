@@ -1,8 +1,9 @@
 "use client"
 
 import Image from "next/image";
-import { FormEvent, useEffect, useRef, useState } from "react";
-import { Loading } from "./components/loading";
+import { FormEvent, useState } from "react";
+import { Loading } from "../components/Loading";
+
 
 type WSResults = {
   priceMin: string;
@@ -89,10 +90,10 @@ export default function Home() {
 
       {isLoading && <Loading />}
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mb-3">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-            <div className="relative h-100 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="relative h-120 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={prod.title}
@@ -101,7 +102,7 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col">
-              <p className="text-white text-center mt-1">Liga Magic</p>
+              <a className="text-white text-center mt-1" href="https://www.ligamagic.com.br/">Liga Magic</a>
               <table className="mt-1">
                 <tbody>
                   <tr>
@@ -154,7 +155,6 @@ export default function Home() {
               </table>
             </div>
           </div>
-
         ))}
       </div>
     </main>
