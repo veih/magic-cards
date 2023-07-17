@@ -1,0 +1,29 @@
+[
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 799,90",
+    "priceMed": "R$ 799,90",
+    "priceMax": "R$ 799,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230616/1686932480_3770.jpg",
+    "productId": "product-0"
+  },
+  {
+    "name": "\n                                \n                                 Portão do Penhasco\n                            ",
+    "nameAux": "Cliffgate",
+    "priceMin": "R$ 4,50",
+    "priceMed": "R$ 6,87",
+    "priceMax": "R$ 9,89",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/628f9d5966f59-niprd-zhen5-385592512628f9d5966fa4.jpg",
+    "productId": "product-1"
+  },
+  {
+    "name": "\n                                \n                                 Wulfgar do Vale do Vento Gélido\n                            ",
+    "nameAux": "Wulfgar of Icewind Dale",
+    "priceMin": "R$ 7,55",
+    "priceMed": "R$ 11,65",
+    "priceMax": "R$ 22,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479862/60ec577d447ff-kmnj6-x5wne-173364691960ec577d44843.jpg",
+    "productId": "product-2"
+  }
+]

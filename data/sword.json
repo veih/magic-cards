@@ -1,0 +1,362 @@
+[
+  {
+    "name": "\n                                \n                                 A Forja da Espada de Tyrita\n                            ",
+    "nameAux": "Forging the Tyrite Sword",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 0,77",
+    "priceMax": "R$ 1,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/5ffcd6e065563-m2irc-jdpa9-21293055185ffcd6e0655c3.jpg",
+    "productId": "product-0"
+  },
+  {
+    "name": "\n                                \n                                 Anel de Barahir // Espada da Animista\n                            ",
+    "nameAux": "Ring of Barahir // Sword of the Animist",
+    "priceMin": "R$ 59,90",
+    "priceMed": "R$ 67,96",
+    "priceMax": "R$ 79,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480241/648226a444585-03wmg-j5dwu-986550671648226a4445cd.jpg",
+    "productId": "product-1"
+  },
+  {
+    "name": "\n                                \n                                 Barreira de Espadas\n                            ",
+    "nameAux": "Wall of Swords",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,71",
+    "priceMax": "R$ 8,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/351/5f4243d8dfc59-0jiy4a-c504b2-94201692e8958be85ee1b7e12887a64c.jpg",
+    "productId": "product-2"
+  },
+  {
+    "name": "\n                                \n                                 Bruto Vende-Espada\n                            ",
+    "nameAux": "Sell-Sword Brute",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,36",
+    "priceMax": "R$ 1,35",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/197/5f42434029571-dqymbc-1qvea4-a8baa56554f96369ab93e4f3bb068c22.jpg",
+    "productId": "product-3"
+  },
+  {
+    "name": "\n                                \n                                 Carapace (Sword)\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,42",
+    "priceMax": "R$ 1,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/223/5f4243669885c-vs3bam-tz2qwh-cdbd1d3886cd6adf847b312b6070b62f.jpg",
+    "productId": "product-4"
+  },
+  {
+    "name": "\n                                \n                                 Cavaleira Jurada à Espada\n                            ",
+    "nameAux": "Swordsworn Cavalier",
+    "priceMin": "R$ 0,07",
+    "priceMed": "R$ 0,35",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480189/642d934b7a214-4wmel-qjogh-284153596642d934b7a256.jpg",
+    "productId": "product-5"
+  },
+  {
+    "name": "\n                                \n                                 Centauro Mestre da Espada\n                            ",
+    "nameAux": "Swordwise Centaur",
+    "priceMin": "R$ 0,09",
+    "priceMed": "R$ 0,33",
+    "priceMax": "R$ 0,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/353/627156164dc4b-ldit4-fuzxy-924604441627156164dc9a.jpg",
+    "productId": "product-6"
+  },
+  {
+    "name": "\n                                \n                                 Dançarino da Espada\n                            ",
+    "nameAux": "Sword Dancer",
+    "priceMin": "R$ 0,08",
+    "priceMed": "R$ 0,64",
+    "priceMax": "R$ 3,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/234/5f4243838e200-2newh7-4gre69-d82c8d1619ad8176d665453cfb2e55f0.jpg",
+    "productId": "product-7"
+  },
+  {
+    "name": "\n                                \n                                 Diplomacia ao Fio da Espada\n                            ",
+    "nameAux": "Sword-Point Diplomacy",
+    "priceMin": "R$ 0,25",
+    "priceMed": "R$ 1,56",
+    "priceMax": "R$ 3,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/247714/62509591afd3b-lswnd-njlyo-193307445262509591afd7c.jpg",
+    "productId": "product-8"
+  },
+  {
+    "name": "\n                                \n                                 Espada Celestial\n                            ",
+    "nameAux": "Celestial Sword",
+    "priceMin": "R$ 0,50",
+    "priceMed": "R$ 1,78",
+    "priceMax": "R$ 4,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/313/5f4243b319436-wx5rih-7blder-efbd1910af98f9b322f681f5453a847e.jpg",
+    "productId": "product-9"
+  },
+  {
+    "name": "\n                                \n                                 Espada Curta\n                            ",
+    "nameAux": "Short Sword",
+    "priceMin": "R$ 0,03",
+    "priceMed": "R$ 0,31",
+    "priceMax": "R$ 1,31",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479807/5f42444b4a881-15bkn2-21xle8-01161aaa0b6d1345dd8fe4e481144d84.jpg",
+    "productId": "product-10"
+  },
+  {
+    "name": "\n                                \n                                 Espada da Animista\n                            ",
+    "nameAux": "Sword of the Animist",
+    "priceMin": "R$ 24,99",
+    "priceMed": "R$ 47,11",
+    "priceMax": "R$ 83,42",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480263/64b1c0e1b19f9-gr73v-tkiem-187125473264b1c0e1b1a38.jpg",
+    "productId": "product-11"
+  },
+  {
+    "name": "\n                                \n                                 Espada da Valquíria\n                            ",
+    "nameAux": "Valkyrie's Sword",
+    "priceMin": "R$ 0,04",
+    "priceMed": "R$ 0,51",
+    "priceMax": "R$ 1,49",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/6001c9eb2001f-xhjbu-hx5k3-8093887366001c9eb20066.jpg",
+    "productId": "product-12"
+  },
+  {
+    "name": "\n                                \n                                 Espada da Vingança\n                            ",
+    "nameAux": "Sword of Vengeance",
+    "priceMin": "R$ 2,21",
+    "priceMed": "R$ 3,98",
+    "priceMax": "R$ 7,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480098/6349d6b149029-utxz4-fn2jo-12696429716349d6b149071.jpg",
+    "productId": "product-13"
+  },
+  {
+    "name": "\n                                \n                                 Espada Dançarina\n                            ",
+    "nameAux": "Dancing Sword",
+    "priceMin": "R$ 0,25",
+    "priceMed": "R$ 1,46",
+    "priceMax": "R$ 5,27",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479855/60e4acff38e7e-am14y-t5ulf-143557396960e4acff38edb.jpg",
+    "productId": "product-14"
+  },
+  {
+    "name": "\n                                \n                                 Espada das Horas\n                            ",
+    "nameAux": "Sword of Hours",
+    "priceMin": "R$ 1,58",
+    "priceMed": "R$ 3,95",
+    "priceMax": "R$ 6,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479862/60ec5824b7f9e-hyzrs-xzpcf-209999560360ec5824b800c.jpg",
+    "productId": "product-15"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Aço e Tendão\n                            ",
+    "nameAux": "Sword of Sinew and Steel",
+    "priceMin": "R$ 42,49",
+    "priceMed": "R$ 69,42",
+    "priceMax": "R$ 109,20",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479760/5f42442dc4b4b-74gvw2-xbh1y8-74db120f0a8e5646ef5a30154e9f6deb.jpg",
+    "productId": "product-16"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Aço e Tendão (Art Series #47)\n                            ",
+    "nameAux": "Sword of Sinew and Steel (Art Series #47)",
+    "priceMin": "R$ 0,30",
+    "priceMed": "R$ 0,86",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479760/5f42442d963c5-d48ucr-2nvefg-df01ed1818b14ab9810dbee114d151ac.jpg",
+    "productId": "product-17"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Banquete e Fome\n                            ",
+    "nameAux": "Sword of Feast and Famine",
+    "priceMin": "R$ 94,90",
+    "priceMed": "R$ 406,17",
+    "priceMax": "R$ 2.500,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/63ca6ff0e1176-vigxz-s5wa8-98715302163ca6ff0e11c1.jpg",
+    "productId": "product-18"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Bronze\n                            ",
+    "nameAux": "Bronze Sword",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,29",
+    "priceMax": "R$ 0,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479782/5f424437e3eb9-h5l7fb-jocwb0-be83ab3ecd0db773eb2dc1b0a17836a1.jpg",
+    "productId": "product-19"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Corpo e Mente\n                            ",
+    "nameAux": "Sword of Body and Mind",
+    "priceMin": "R$ 32,00",
+    "priceMed": "R$ 100,42",
+    "priceMax": "R$ 450,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479804/5f42444418571-nzyed7-pcla0g-49182f81e6a13cf5eaa496d51fea6406.jpg",
+    "productId": "product-20"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Fogo e Gelo\n                            ",
+    "nameAux": "Sword of Fire and Ice",
+    "priceMin": "R$ 157,26",
+    "priceMed": "R$ 451,48",
+    "priceMax": "R$ 1.199,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479804/5f42444422cd1-rhwucs-6l4gzu-9fd81843ad7f202f26c1a174c7357585.jpg",
+    "productId": "product-21"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Forja e Fronteira\n                            ",
+    "nameAux": "Sword of Forge and Frontier",
+    "priceMin": "R$ 61,51",
+    "priceMed": "R$ 130,73",
+    "priceMax": "R$ 239,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ad6e3c6c1-a8lgd-hyfer-156791746563d3ad6e3c70c.jpg",
+    "productId": "product-22"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Guerra e Paz\n                            ",
+    "nameAux": "Sword of War and Peace",
+    "priceMin": "R$ 36,00",
+    "priceMed": "R$ 150,48",
+    "priceMax": "R$ 599,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/63ca6ff29cb6c-g5ko4-7piov-140113156263ca6ff29cbb6.jpg",
+    "productId": "product-23"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Kaldra\n                            ",
+    "nameAux": "Sword of Kaldra",
+    "priceMin": "R$ 19,75",
+    "priceMed": "R$ 69,32",
+    "priceMax": "R$ 189,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/202/5f42434402a1d-fc4ji0-eynvgk-19f3cd308f1455b3fa09a282e0d496f4.jpg",
+    "productId": "product-24"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Lar e Morada\n                            ",
+    "nameAux": "Sword of Hearth and Home",
+    "priceMin": "R$ 39,90",
+    "priceMed": "R$ 68,85",
+    "priceMax": "R$ 115,54",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479849/60ad4bb4ca4e1-z26ty-aztog-58075263460ad4bb4ca544.jpg",
+    "productId": "product-25"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Lar e Morada (Art Card com Assinatura)\n                            ",
+    "nameAux": "Sword of Hearth and Home (Art Card com Assinatura)",
+    "priceMin": "R$ 4,00",
+    "priceMed": "R$ 5,98",
+    "priceMax": "R$ 8,91",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479860/60baa540d6cbe-vlf8n-9hcae-200143393860baa540d6d15.jpg",
+    "productId": "product-26"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Lar e Morada (Art Card)\n                            ",
+    "nameAux": "Sword of Hearth and Home (Art Card)",
+    "priceMin": "R$ 0,40",
+    "priceMed": "R$ 1,25",
+    "priceMax": "R$ 2,40",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479860/60c9ed3bf16ca-ralq3-dkwri-208657752960c9ed3bf1715.jpg",
+    "productId": "product-27"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Luz e Sombra\n                            ",
+    "nameAux": "Sword of Light and Shadow",
+    "priceMin": "R$ 54,99",
+    "priceMed": "R$ 167,94",
+    "priceMax": "R$ 480,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479804/5f42444444cc0-39kud6-uisgra-26e359e83860db1d11b6acca57d8ea88.jpg",
+    "productId": "product-28"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Passado e Futuro\n                            ",
+    "nameAux": "Sword of Once and Future",
+    "priceMin": "R$ 44,00",
+    "priceMed": "R$ 65,28",
+    "priceMax": "R$ 149,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480189/6424a58df0932-gsuwh-uexi8-14251951246424a58df0972.jpg",
+    "productId": "product-29"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Verdade e Justiça\n                            ",
+    "nameAux": "Sword of Truth and Justice",
+    "priceMin": "R$ 82,49",
+    "priceMed": "R$ 148,86",
+    "priceMax": "R$ 236,09",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479760/5f42442d83fe9-lb2eam-gmi2n5-57aeee35c98205091e18d1140e9f38cf.jpg",
+    "productId": "product-30"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Verdade e Justiça (Art Series #46)\n                            ",
+    "nameAux": "Sword of Truth and Justice (Art Series #46)",
+    "priceMin": "R$ 0,30",
+    "priceMed": "R$ 0,93",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479760/5f42442d75aca-17vw6y-e9kq72-6df75b891e0ccf4dd333f83b52e96d89.jpg",
+    "productId": "product-31"
+  },
+  {
+    "name": "\n                                \n                                 Espada do Humilde\n                            ",
+    "nameAux": "Sword of the Meek",
+    "priceMin": "R$ 0,99",
+    "priceMed": "R$ 21,29",
+    "priceMax": "R$ 180,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480101/63603823c260f-ntdih-l7wm1-18168360363603823c2656.jpg",
+    "productId": "product-32"
+  },
+  {
+    "name": "\n                                \n                                 Espada dos Escolhidos\n                            ",
+    "nameAux": "Sword of the Chosen",
+    "priceMin": "R$ 0,75",
+    "priceMed": "R$ 2,79",
+    "priceMax": "R$ 8,95",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479948/6303aff01e322-8ek5r-r0njc-14833700706303aff01e369.jpg",
+    "productId": "product-33"
+  },
+  {
+    "name": "\n                                \n                                 Espada dos Paruns\n                            ",
+    "nameAux": "Sword of the Paruns",
+    "priceMin": "R$ 14,40",
+    "priceMed": "R$ 25,12",
+    "priceMax": "R$ 40,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/179141/5f42440e01dde-5wb3s9-258lyk-289dff07669d7a23de0ef88d2f7129e7.jpg",
+    "productId": "product-34"
+  },
+  {
+    "name": "\n                                \n                                 Espada dos Reinos\n                            ",
+    "nameAux": "Sword of the Realms",
+    "priceMin": "R$ 0,00",
+    "priceMed": "R$ 0,00",
+    "priceMax": "R$ 0,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479835/5fdb89f48d066-z93st-y0g36-18345355995fdb89f48d0b5.jpg",
+    "productId": "product-35"
+  },
+  {
+    "name": "\n                                \n                                 Espada Flamejante\n                            ",
+    "nameAux": "Flaming Sword",
+    "priceMin": "R$ 0,08",
+    "priceMed": "R$ 0,41",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/213/5f4243603b2b4-0q84vp-zwjy0n-cfecdb276f634854f3ef915e2e980c31.jpg",
+    "productId": "product-36"
+  },
+  {
+    "name": "\n                                \n                                 Espada Grande de Tyr\n                            ",
+    "nameAux": "Greatsword of Tyr",
+    "priceMin": "R$ 0,18",
+    "priceMed": "R$ 1,01",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/628d0d75ac059-ukxsb-sz7jl-1720230912628d0d75ac09c.jpg",
+    "productId": "product-37"
+  },
+  {
+    "name": "\n                                \n                                 Espada Insigne de Valeron\n                            ",
+    "nameAux": "Sigiled Sword of Valeron",
+    "priceMin": "R$ 1,25",
+    "priceMed": "R$ 2,97",
+    "priceMax": "R$ 7,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480190/642dc966e4470-ixuey-81drt-1693372467642dc966e44a9.jpg",
+    "productId": "product-38"
+  },
+  {
+    "name": "\n                                \n                                 Espada Vorpal\n                            ",
+    "nameAux": "Vorpal Sword",
+    "priceMin": "R$ 3,95",
+    "priceMed": "R$ 9,27",
+    "priceMax": "R$ 199,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479855/60db56f076a9b-iprwb-n7p3c-149765611760db56f076ae5.jpg",
+    "productId": "product-39"
+  }
+]

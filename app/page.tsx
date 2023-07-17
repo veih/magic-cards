@@ -4,8 +4,10 @@ import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { Loading } from "../components/Loading";
 
-
 type WSResults = {
+  id: string;
+  name: string;
+  nameAux: string;
   priceMin: string;
   priceMed: string;
   priceMax: string;
@@ -51,21 +53,21 @@ export default function Home() {
     const rect = cardImage.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
-    
+
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    
+
     const rotateX = (mouseY - centerY) / 10;
     const rotateY = (mouseX - centerX) / 10;
-    
+
     cardImage.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
-  
+
   const handleMouseLeave = (e: { currentTarget: { querySelector: (arg0: string) => any; }; }) => {
     const cardImage = e.currentTarget.querySelector('.card-image');
     cardImage.style.transform = 'none';
   };
-  
+
   return (
     <main className="max-w-5xl mx-auto flex flex-col mt-4 justify-center">
       <div>
@@ -76,14 +78,14 @@ export default function Home() {
           value={searchPrompt}
           onChange={(e) => setSearchPrompt(e.target.value)}
           type="text"
-          placeholder="Product to be searched..."
+          placeholder="Cartas de magic..."
           className="px-2 bg-gray-800 text-white border border-gray-600 rounded-md outline-none"
         />
         <button
           disabled={searchPrompt === ""}
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md disabled:bg-blue-500/40 disabled:cursor-not-allowed"
         >
-          {isLoading ? "Searching..." : "Search"}
+          {isLoading ? "Searching..." : "Magic"}
         </button>
       </form>
 
@@ -95,7 +97,7 @@ export default function Home() {
             <div className="relative h-120 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
-                alt={prod.title}
+                alt={"Sem imagem"}
                 fill
                 className="rounded-lg card-image"
               />

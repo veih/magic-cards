@@ -1,0 +1,191 @@
+[
+  {
+    "name": "\n                                \n                                 Apaziguamento de Dragão\n                            ",
+    "nameAux": "Dragon Appeasement",
+    "priceMin": "R$ 0,10",
+    "priceMed": "R$ 0,58",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/182/5f42432a32c9b-7i9ptj-46z5d7-2b44928ae11fb9384c4cf38708677c48.jpg",
+    "productId": "product-0"
+  },
+  {
+    "name": "\n                                \n                                 Caminho da Paz\n                            ",
+    "nameAux": "Path of Peace",
+    "priceMin": "R$ 0,04",
+    "priceMed": "R$ 0,43",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/416616/5f42441656117-qsrd3z-64nv5u-6ea9ab1baa0efb9e19094440c317e21b.jpg",
+    "productId": "product-1"
+  },
+  {
+    "name": "\n                                \n                                 Colosso Caminhante da Paz\n                            ",
+    "nameAux": "Peacewalker Colossus",
+    "priceMin": "R$ 0,30",
+    "priceMed": "R$ 1,72",
+    "priceMax": "R$ 9,75",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480138/637d148fd8a49-v09ha-a504k-139177997637d148fd8a95.jpg",
+    "productId": "product-2"
+  },
+  {
+    "name": "\n                                \n                                 Conversações de Paz\n                            ",
+    "nameAux": "Peace Talks",
+    "priceMin": "R$ 0,19",
+    "priceMed": "R$ 0,84",
+    "priceMax": "R$ 1,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/221/5f4243650a7df-o3y508-mpe2ry-4fb20abfc2f48f81b21709bf7e4dae71.jpg",
+    "productId": "product-3"
+  },
+  {
+    "name": "\n                                \n                                 Descanse em Paz\n                            ",
+    "nameAux": "Rest in Peace",
+    "priceMin": "R$ 28,99",
+    "priceMed": "R$ 49,24",
+    "priceMax": "R$ 66,79",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/5f5b63edb0ac7-vkowx-4vwgr-20482680175f5b63edb0b1c.jpg",
+    "productId": "product-4"
+  },
+  {
+    "name": "\n                                \n                                 Dragão de Topázio // Nuvem Entrópica\n                            ",
+    "nameAux": "Topaz Dragon // Entropic Cloud",
+    "priceMin": "R$ 0,10",
+    "priceMed": "R$ 0,99",
+    "priceMax": "R$ 3,06",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/628f9e6d8f898-tx7p4-zhjwl-670741247628f9e6d8f8db.jpg",
+    "productId": "product-5"
+  },
+  {
+    "name": "\n                                \n                                 Espada de Guerra e Paz\n                            ",
+    "nameAux": "Sword of War and Peace",
+    "priceMin": "R$ 36,00",
+    "priceMed": "R$ 150,48",
+    "priceMax": "R$ 599,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/63ca6ff29cb6c-g5ko4-7piov-140113156263ca6ff29cbb6.jpg",
+    "productId": "product-6"
+  },
+  {
+    "name": "\n                                \n                                 Guardião da Paz Ungido\n                            ",
+    "nameAux": "Anointed Peacekeeper",
+    "priceMin": "R$ 3,95",
+    "priceMed": "R$ 11,48",
+    "priceMax": "R$ 24,75",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479947/630660b9cb1d8-c2et5-7l9b2-1540213556630660b9cb209.jpg",
+    "productId": "product-7"
+  },
+  {
+    "name": "\n                                \n                                 Lícide Apaziguador\n                            ",
+    "nameAux": "Calming Licid",
+    "priceMin": "R$ 0,18",
+    "priceMed": "R$ 0,78",
+    "priceMax": "R$ 2,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/5f5b645a6b471-k9piu-vgkhf-19891459115f5b645a6b4bb.jpg",
+    "productId": "product-8"
+  },
+  {
+    "name": "\n                                \n                                 Loxodonte Guardião da Paz\n                            ",
+    "nameAux": "Loxodon Peacekeeper",
+    "priceMin": "R$ 0,40",
+    "priceMed": "R$ 1,82",
+    "priceMax": "R$ 3,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/202/5f42434367926-of6p70-6yrekx-c51ce410c124a10e0db5e4b97fc2af39.jpg",
+    "productId": "product-9"
+  },
+  {
+    "name": "\n                                \n                                 Mandato de Paz\n                            ",
+    "nameAux": "Mandate of Peace",
+    "priceMin": "R$ 3,10",
+    "priceMed": "R$ 5,07",
+    "priceMax": "R$ 8,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479772/5f42443179112-k16wi3-vn2gpk-a87ff679a2f3e71d9181a67b7542122c.jpg",
+    "productId": "product-10"
+  },
+  {
+    "name": "\n                                \n                                 Paz de Espírito\n                            ",
+    "nameAux": "Peace of Mind",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,54",
+    "priceMax": "R$ 1,49",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/81713/626717dd3c5b8-3zocw-unk1b-81886153626717dd3c5ff.jpg",
+    "productId": "product-11"
+  },
+  {
+    "name": "\n                                \n                                 Paz e Descanso\n                            ",
+    "nameAux": "Peace and Quiet",
+    "priceMin": "R$ 0,10",
+    "priceMed": "R$ 0,80",
+    "priceMax": "R$ 3,75",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/215/5f424360df278-gjcyse-bfqxk9-70efdf2ec9b086079795c442636b55fb.jpg",
+    "productId": "product-12"
+  },
+  {
+    "name": "\n                                \n                                 Paz Momentânea\n                            ",
+    "nameAux": "Moment's Peace",
+    "priceMin": "R$ 9,50",
+    "priceMed": "R$ 17,20",
+    "priceMax": "R$ 24,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/208/5f42435d0755e-6eu7yd-nloec0-19f3cd308f1455b3fa09a282e0d496f4.jpg",
+    "productId": "product-13"
+  },
+  {
+    "name": "\n                                \n                                 Paz Momentânea (DZ-03)\n                            ",
+    "nameAux": "Moment's Peace (DZ-03)",
+    "priceMin": "R$ 0,00",
+    "priceMed": "R$ 0,00",
+    "priceMax": "R$ 0,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/440839/5fcfc82417103-ozxqs-b67lf-754914435fcfc8241715f.jpg",
+    "productId": "product-14"
+  },
+  {
+    "name": "\n                                \n                                 Plumas da Paz\n                            ",
+    "nameAux": "Plumes of Peace",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,48",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/195/5f42433f1a9ed-jgus7b-ps1lzv-c8ffe9a587b126f152ed3d89a146b445.jpg",
+    "productId": "product-15"
+  },
+  {
+    "name": "\n                                \n                                 Restaurar a Paz\n                            ",
+    "nameAux": "Restore the Peace",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,50",
+    "priceMax": "R$ 1,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/331/6319003d4916a-t36g7-tdmhn-2238246116319003d491ad.jpg",
+    "productId": "product-16"
+  },
+  {
+    "name": "\n                                \n                                 Apaziguamento de Sméagol\n                            ",
+    "nameAux": "Soothing of Sméagol",
+    "priceMin": "R$ 0,18",
+    "priceMed": "R$ 0,71",
+    "priceMax": "R$ 5,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480196/64838f0174067-2qng3-e24ux-70264445964838f01740a7.jpg",
+    "productId": "product-17"
+  },
+  {
+    "name": "\n                                \n                                R Vigilante da Paz\n                            ",
+    "nameAux": "Peacekeeper",
+    "priceMin": "R$ 95,00",
+    "priceMed": "R$ 132,98",
+    "priceMax": "R$ 208,42",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/220/5f42436490b4a-g0m36j-ld13ti-5aaa9d472c9f5c4b7becc33080e7b260.jpg",
+    "productId": "product-18"
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "",
+    "priceMed": "",
+    "priceMax": "",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20181228/1546021323_6712.jpg",
+    "productId": "product-19"
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "",
+    "priceMed": "",
+    "priceMax": "",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20181228/1546021154_2852.jpg",
+    "productId": "product-20"
+  }
+]

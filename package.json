@@ -26,6 +26,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.31"
+    "@types/cheerio": "^0.22.31",
+    "@types/node-fetch": "^2.6.4"
   }
 }
