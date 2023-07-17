@@ -66,9 +66,8 @@ export default function Home() {
     cardImage.style.transform = 'none';
   };
   
-
   return (
-    <main className="max-w-5xl mx-auto flex flex-col mt-2 justify-center">
+    <main className="max-w-5xl mx-auto flex flex-col mt-4 justify-center">
       <div>
         <p className="text-white mt-2 text-center text-2xl">Digite o nome completo da carta para facilitar sua busca</p>
       </div>
