@@ -1,20 +1,322 @@
 [
   {
-    "name": "\n                                \n                                 Narset do Caminho Antigo\n                            ",
-    "nameAux": "Narset of the Ancient Way",
-    "priceMin": "R$ 3,90",
-    "priceMed": "R$ 12,70",
-    "priceMax": "R$ 69,98",
-    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f42444166855-g3h27c-1zqtyp-0336dcbab05b9d5ad24f4333c7658a0e.jpg",
-    "productId": 0
+    "name": "\n                                \n                                 \"Brims\" Barone, Midway Mobster\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 0,24",
+    "priceMed": "R$ 1,63",
+    "priceMax": "R$ 5,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480096/63344fe1b2668-3q96y-1h46z-188910942463344fe1b26ad.jpg"
   },
   {
-    "name": "\n                                \n                                 Narset do Caminho Antigo Emblema\n                            ",
-    "nameAux": "Narset of the Ancient Way Emblem",
-    "priceMin": "R$ 0,39",
-    "priceMed": "R$ 1,93",
+    "name": "\n                                \n                                 \"Rumors of My Death . . .\"\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 0,14",
+    "priceMed": "R$ 0,48",
+    "priceMax": "R$ 1,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/251907/5f42441229b72-exo0bw-cjqwfi-fc490ca45c00b1249bbe3554a4fdf6fb.jpg"
+  },
+  {
+    "name": "\n                                \n                                 “Ach! Hans, Run!”\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 34,99",
+    "priceMed": "R$ 36,16",
+    "priceMax": "R$ 37,75",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/271/5f4243a7c90d0-ur6naz-ak9c70-c45147dee729311ef5b5c3003946c48f.jpg"
+  },
+  {
+    "name": "\n                                \n                                 “Quests” (#03)\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 0,00",
+    "priceMed": "R$ 0,00",
+    "priceMax": "R$ 0,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480275/64b57bb703830-jn2ut-ehclg-137362250764b57bb70389e.jpg"
+  },
+  {
+    "name": "\n                                \n                                 1996 World Champion\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 99.999.999,99",
+    "priceMed": "R$ 99.999.999,99",
+    "priceMax": "R$ 99.999.999,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/307/63a0a986e8f81-y4ive-blhj9-96060904663a0a986e8fc2.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Ancianomancia\n                            ",
+    "nameAux": "The Elderspell",
+    "priceMin": "R$ 1,30",
+    "priceMed": "R$ 4,28",
+    "priceMax": "R$ 7,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479759/5f42442cab35d-9sapgq-2g9ani-7647966b7343c29048673252e490f736.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Arquimandrita\n                            ",
+    "nameAux": "The Archimandrite",
+    "priceMin": "R$ 2,90",
+    "priceMed": "R$ 10,32",
+    "priceMax": "R$ 24,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480103/63657d01b9066-h7cjr-k0wo4-80393405763657d01b90ac.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Árvore da Festa // O Grande Círculo\n                            ",
+    "nameAux": "The Party Tree // The Great Henge",
+    "priceMin": "R$ 280,00",
+    "priceMed": "R$ 315,50",
+    "priceMax": "R$ 349,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480241/6478da2357d2a-qbd06-tbx41-13850220916478da2357d68.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Árvore-mundo\n                            ",
+    "nameAux": "The World Tree",
+    "priceMin": "R$ 24,29",
+    "priceMed": "R$ 46,06",
+    "priceMax": "R$ 169,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479835/5ffdc65a679f8-aivw0-16qs9-17927169855ffdc65a67a53.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Árvore-mundo (Art Card com Assinatura)\n                            ",
+    "nameAux": "The World Tree (Art Card with Signature)",
+    "priceMin": "R$ 0,00",
+    "priceMed": "R$ 0,00",
+    "priceMax": "R$ 0,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480257/64a5c2fd9fddb-6tld4-j2dz8-53933244964a5c2fd9fe1b.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Árvore-mundo (Art Card)\n                            ",
+    "nameAux": "The World Tree (Art Card)",
+    "priceMin": "R$ 0,50",
+    "priceMed": "R$ 1,74",
+    "priceMax": "R$ 3,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480257/64a5beb626232-o03bk-ykpdg-74495586364a5beb626271.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Basílica Alva (Art Card com Assinatura)\n                            ",
+    "nameAux": "The Fair Basilica (Art Card with Signature)",
+    "priceMin": "R$ 3,80",
+    "priceMed": "R$ 4,37",
+    "priceMax": "R$ 5,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480172/63dba6d93c908-jsnyl-7tqlr-83529420263dba6d93c954.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Basílica Alva (Art Card)\n                            ",
+    "nameAux": "The Fair Basilica (Art Card)",
+    "priceMin": "R$ 0,40",
+    "priceMed": "R$ 0,80",
+    "priceMax": "R$ 3,56",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480172/63ea9ad7ba655-fh1rb-lefxd-65777079963ea9ad7ba695.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Batalha de Beirágua\n                            ",
+    "nameAux": "The Battle of Bywater",
+    "priceMin": "R$ 5,76",
+    "priceMed": "R$ 9,02",
+    "priceMax": "R$ 39,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480196/6480cfbfb5ee8-piwjr-fv51n-12080928836480cfbfb5f26.jpg"
+  },
+  {
+    "name": "\n                                \n                                 À Beira da Loucura\n                            ",
+    "nameAux": "Brink of Madness",
+    "priceMin": "R$ 0,90",
+    "priceMed": "R$ 2,52",
+    "priceMax": "R$ 7,75",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/5f5b637588106-rbnd0-rp5hu-15761574365f5b637588160.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Caldaia\n                            ",
+    "nameAux": "The Caldaia",
+    "priceMin": "R$ 3,83",
+    "priceMed": "R$ 7,30",
+    "priceMax": "R$ 19,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480201/642ddf4e43944-1ed4c-buzs8-684781808642ddf4e43989.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Canção do Banho\n                            ",
+    "nameAux": "The Bath Song",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 0,79",
+    "priceMax": "R$ 2,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480196/647a2e692f99c-izvwt-qk5ua-460698734647a2e692f9ef.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Chama de Keld\n                            ",
+    "nameAux": "The Flame of Keld",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 0,93",
+    "priceMax": "R$ 2,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/5f5b65504878b-i8670-2cf43-3626778825f5b6550487d9.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Cidade Dourada de Orazca\n                            ",
+    "nameAux": "The Golden City of Orazca",
+    "priceMin": "R$ 3,95",
+    "priceMed": "R$ 8,89",
+    "priceMax": "R$ 19,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480201/642ddf51d56b0-q23rt-3bycp-2087458447642ddf51d56f2.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Conjectura do Mirari\n                            ",
+    "nameAux": "The Mirari Conjecture",
+    "priceMin": "R$ 0,35",
+    "priceMed": "R$ 1,45",
+    "priceMax": "R$ 7,13",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/425127/5f4244170cb39-pu6arh-lpx1it-72b32a1f754ba1c09b3695e0cb6cde7f.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Crueldade de Gix\n                            ",
+    "nameAux": "The Cruelty of Gix",
+    "priceMin": "R$ 3,99",
+    "priceMed": "R$ 8,64",
+    "priceMax": "R$ 12,74",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479947/6309f9d16761e-6c0b4-pl6fc-11711551036309f9d16765d.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Desmaterialização de Zhalfir\n                            ",
+    "nameAux": "The Phasing of Zhalfir",
+    "priceMin": "R$ 1,25",
+    "priceMed": "R$ 3,19",
+    "priceMax": "R$ 11,81",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479947/62ffc8fbc9beb-yjki9-2o4m8-125785382262ffc8fbc9c2a.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Dianteira // Submundo\n                            ",
+    "nameAux": "The Initiative // Undercity",
+    "priceMin": "R$ 0,10",
+    "priceMed": "R$ 0,65",
+    "priceMax": "R$ 1,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479959/629df92826c12-3iha1-6pok4-2008275728629df92826c5d.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Display of My Dark Power\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 3,95",
+    "priceMed": "R$ 5,00",
+    "priceMax": "R$ 3,95",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/252/5f42438fc1de6-7x1fro-k6xzam-952f9f1c789ad4e6d4c34fe8532c59cd.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Emenda de Dominária\n                            ",
+    "nameAux": "The Mending of Dominaria",
+    "priceMin": "R$ 0,50",
+    "priceMed": "R$ 2,11",
+    "priceMax": "R$ 4,31",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/630d1e69baa8f-o2fd9-by312-111763379630d1e69baacf.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Era dos Estados Despedaçados\n                            ",
+    "nameAux": "The Shattered States Era",
+    "priceMin": "R$ 0,03",
+    "priceMed": "R$ 0,39",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479888/61f417491e583-1b70s-wkd52-39707123561f417491e5e9.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Era Moderna\n                            ",
+    "nameAux": "The Modern Age",
+    "priceMin": "R$ 0,25",
+    "priceMed": "R$ 2,39",
+    "priceMax": "R$ 4,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479888/61f41739e96e5-lgdcv-xei75-136729583261f41739e9726.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Errante\n                            ",
+    "nameAux": "The Wanderer",
+    "priceMin": "R$ 0,86",
+    "priceMed": "R$ 3,19",
+    "priceMax": "R$ 14,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/620d0535e9eff-o1603-4c1r8-2001810474620d0535e9f3f.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Errante Eterna\n                            ",
+    "nameAux": "The Eternal Wanderer",
+    "priceMin": "R$ 12,00",
+    "priceMed": "R$ 61,33",
+    "priceMax": "R$ 114,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ad80f1310-yxet8-0854i-75122346763d3ad80f135d.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Errante Eterna (Art Card com Assinatura)\n                            ",
+    "nameAux": "The Eternal Wanderer (Art Card with Signature)",
+    "priceMin": "R$ 3,95",
+    "priceMed": "R$ 4,50",
     "priceMax": "R$ 5,99",
-    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f424440bd0c1-owgyql-z4rxhd-72963b0e4d3e9a1c0e511dfb1ec25aab.jpg",
-    "productId": 1
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480172/63dba6d5c2a55-kfd82-nt3if-154001771363dba6d5c2aa7.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Errante Eterna (Art Card)\n                            ",
+    "nameAux": "The Eternal Wanderer (Art Card)",
+    "priceMin": "R$ 0,40",
+    "priceMed": "R$ 0,89",
+    "priceMax": "R$ 3,56",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480172/63ea99e1077f0-9qluj-x7hil-190630772663ea99e10782f.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Fachada Monumental\n                            ",
+    "nameAux": "The Monumental Facade",
+    "priceMin": "R$ 0,93",
+    "priceMed": "R$ 3,12",
+    "priceMax": "R$ 59,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ad880aab6-yi6rq-wlckv-53657350763d3ad880ab00.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Forja da Espada de Tyrita\n                            ",
+    "nameAux": "Forging the Tyrite Sword",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 0,76",
+    "priceMax": "R$ 1,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/5ffcd6e065563-m2irc-jdpa9-21293055185ffcd6e0655c3.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Good Day to Pie\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 0,15",
+    "priceMed": "R$ 0,45",
+    "priceMax": "R$ 1,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480093/6334584e1b8c8-oa8th-izb1m-13115471946334584e1b907.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Good Thing\n                            ",
+    "nameAux": "",
+    "priceMin": "R$ 1,63",
+    "priceMed": "R$ 8,03",
+    "priceMax": "R$ 24,89",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479871/6127c4235bcd8-gjscw-khmrn-9125907206127c4235bd17.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Grande Aurora\n                            ",
+    "nameAux": "The Great Aurora",
+    "priceMin": "R$ 2,77",
+    "priceMed": "R$ 5,00",
+    "priceMax": "R$ 8,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/6432cf8a64d3f-f6njk-qpf0n-11444083326432cf8a64d81.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Grande Evolução\n                            ",
+    "nameAux": "The Grand Evolution",
+    "priceMin": "R$ 73,90",
+    "priceMed": "R$ 73,90",
+    "priceMax": "R$ 73,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480189/642b1a61339f3-t9sq8-cutor-803509367642b1a6133a36.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Grande Floresta\n                            ",
+    "nameAux": "The Great Forest",
+    "priceMin": "R$ 1,75",
+    "priceMed": "R$ 4,14",
+    "priceMax": "R$ 8,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/256/5f424390add4d-ejupxq-q3gyu1-5337eaaabe97ff336a80ef939f6201a7.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Grande Obra\n                            ",
+    "nameAux": "The Great Work",
+    "priceMin": "R$ 144,90",
+    "priceMed": "R$ 144,90",
+    "priceMax": "R$ 144,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480189/642c8e1f4e736-z27hl-nb2u5-939961918642c8e1f4e777.jpg"
+  },
+  {
+    "name": "\n                                \n                                 A Grande Síntese\n                            ",
+    "nameAux": "The Great Synthesis",
+    "priceMin": "R$ 78,90",
+    "priceMed": "R$ 78,90",
+    "priceMax": "R$ 78,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480189/6424af42ecdc8-ckhnr-x4vlb-14681768896424af42ece23.jpg"
   }
 ]
