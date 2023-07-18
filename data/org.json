@@ -1,0 +1,362 @@
+[
+  {
+    "name": "\n                                \n                                 A Forja da Espada de Tyrita\n                            ",
+    "nameAux": "Forging the Tyrite Sword",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 0,76",
+    "priceMax": "R$ 1,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/5ffcd6e065563-m2irc-jdpa9-21293055185ffcd6e0655c3.jpg",
+    "productId": 0
+  },
+  {
+    "name": "\n                                \n                                 Abutre Esfomeado\n                            ",
+    "nameAux": "Gorging Vulture",
+    "priceMin": "R$ 0,03",
+    "priceMed": "R$ 0,32",
+    "priceMax": "R$ 0,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480138/637f89f83d3d8-7xpwc-dkzqa-1702971795637f89f83d423.jpg",
+    "productId": 1
+  },
+  {
+    "name": "\n                                \n                                 Acólito Litoforjador\n                            ",
+    "nameAux": "Stoneforge Acolyte",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,50",
+    "priceMax": "R$ 2,49",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/78616/6307939aa2304-rmu9l-auqe9-6782105826307939aa2343.jpg",
+    "productId": 2
+  },
+  {
+    "name": "\n                                \n                                 Anax, Temperado na Forja\n                            ",
+    "nameAux": "Anax, Hardened in the Forge",
+    "priceMin": "R$ 0,35",
+    "priceMed": "R$ 1,74",
+    "priceMax": "R$ 7,20",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/5f5b648e582dc-3zi6s-i8175-12029553435f5b648e58327.jpg",
+    "productId": 3
+  },
+  {
+    "name": "\n                                \n                                 Ancião Esquecido\n                            ",
+    "nameAux": "Forgotten Ancient",
+    "priceMin": "R$ 0,99",
+    "priceMed": "R$ 3,67",
+    "priceMax": "R$ 13,65",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480190/642dc86e88c37-tos3f-ahftb-1713221091642dc86e88c7d.jpg",
+    "productId": 4
+  },
+  {
+    "name": "\n                                \n                                 Anteparo de Grama Cortante\n                            ",
+    "nameAux": "Razorgrass Screen",
+    "priceMin": "R$ 0,06",
+    "priceMed": "R$ 0,43",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/200/5f4243428d6ee-y7nage-2sqn9t-2b24d495052a8ce66358eb576b8912c8.jpg",
+    "productId": 5
+  },
+  {
+    "name": "\n                                \n                                 Arauto dos Esquecidos\n                            ",
+    "nameAux": "Herald of the Forgotten",
+    "priceMin": "R$ 0,52",
+    "priceMed": "R$ 2,38",
+    "priceMax": "R$ 4,39",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479796/5f4244429f554-cd35vy-9px7b0-02e74f10e0327ad868d138f2b4fdd6f0.jpg",
+    "productId": 6
+  },
+  {
+    "name": "\n                                \n                                 Ascensão de Urborg\n                            ",
+    "nameAux": "Urborg Uprising",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,44",
+    "priceMax": "R$ 56,23",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480047/6391e9efe5903-e3ijt-4eqih-19270362836391e9efe5943.jpg",
+    "productId": 7
+  },
+  {
+    "name": "\n                                \n                                 Aspecto de Górgona\n                            ",
+    "nameAux": "Aspect of Gorgon",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,33",
+    "priceMax": "R$ 0,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/355/631128104aca0-dw87h-0yp9c-201063149631128104acdf.jpg",
+    "productId": 8
+  },
+  {
+    "name": "\n                                \n                                 Atendente da Forja de Burrenton\n                            ",
+    "nameAux": "Burrenton Forge-Tender",
+    "priceMin": "R$ 0,15",
+    "priceMed": "R$ 1,10",
+    "priceMax": "R$ 4,85",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/380789/5f424414a1c66-1fe48t-5dgycn-aab3238922bcc25a6f606eb525ffdc56.jpg",
+    "productId": 9
+  },
+  {
+    "name": "\n                                \n                                 Augúrio da Forja\n                            ",
+    "nameAux": "Omen of the Forge",
+    "priceMin": "R$ 0,08",
+    "priceMed": "R$ 0,41",
+    "priceMax": "R$ 1,25",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479782/5f4244386dd05-8qz103-lmgw9i-2b24d495052a8ce66358eb576b8912c8.jpg",
+    "productId": 10
+  },
+  {
+    "name": "\n                                \n                                 Bárbaro Engole-Mágicas\n                            ",
+    "nameAux": "Spellgorger Barbarian",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,40",
+    "priceMax": "R$ 1,45",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/206/5f42434659663-f5d4ie-xckoba-f899139df5e1059396431415e770c6dd.jpg",
+    "productId": 11
+  },
+  {
+    "name": "\n                                \n                                 Bizarro Devora-magia\n                            ",
+    "nameAux": "Spellgorger Weird",
+    "priceMin": "R$ 0,04",
+    "priceMed": "R$ 0,34",
+    "priceMax": "R$ 1,35",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480138/637fe3f87c8d6-1bitz-zbfrc-1780899240637fe3f87c92c.jpg",
+    "productId": 12
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 14,90",
+    "priceMed": "R$ 22,97",
+    "priceMax": "R$ 29,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20180515/1526381904_8783.jpg",
+    "productId": 13
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 22,00",
+    "priceMed": "R$ 34,98",
+    "priceMax": "R$ 49,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210507/1620425933_2938.jpg",
+    "productId": 14
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 99,99",
+    "priceMed": "R$ 139,72",
+    "priceMax": "R$ 179,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210507/1620425948_1116.jpg",
+    "productId": 15
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 14,89",
+    "priceMed": "R$ 24,06",
+    "priceMax": "R$ 34,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210507/1620425962_5956.jpg",
+    "productId": 16
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 40,00",
+    "priceMed": "R$ 45,97",
+    "priceMax": "R$ 48,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210629/1624995924_1908.jpg",
+    "productId": 17
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 40,00",
+    "priceMed": "R$ 45,33",
+    "priceMax": "R$ 46,55",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210629/1624995975_1611.jpg",
+    "productId": 18
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 46,55",
+    "priceMed": "R$ 47,99",
+    "priceMax": "R$ 46,55",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210629/1624995863_6136.jpg",
+    "productId": 19
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 46,55",
+    "priceMed": "R$ 47,99",
+    "priceMax": "R$ 46,55",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210629/1624995909_8061.jpg",
+    "productId": 20
+  },
+  {
+    "name": "\n                                \n                                 Cabeça da Górgona\n                            ",
+    "nameAux": "Gorgon's Head",
+    "priceMin": "R$ 0,53",
+    "priceMed": "R$ 3,17",
+    "priceMax": "R$ 8,63",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/353/6271557b183d1-v7h8n-u0vif-11742718106271557b1841c.jpg",
+    "productId": 21
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 441,99",
+    "priceMed": "R$ 674,10",
+    "priceMax": "R$ 899,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20180515/1526381904_5467.jpg",
+    "productId": 22
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 549,98",
+    "priceMed": "R$ 870,09",
+    "priceMax": "R$ 1.099,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210506/1620340158_5403.jpg",
+    "productId": 23
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 1.275,00",
+    "priceMed": "R$ 1.566,40",
+    "priceMax": "R$ 1.899,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210506/1620340137_2437.jpg",
+    "productId": 24
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 449,98",
+    "priceMed": "R$ 706,19",
+    "priceMax": "R$ 899,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210506/1620340114_9007.jpg",
+    "productId": 25
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 109,99",
+    "priceMed": "R$ 117,92",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305656_8684.jpg",
+    "productId": 26
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 109,90",
+    "priceMed": "R$ 116,58",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305555_9032.jpg",
+    "productId": 27
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 109,99",
+    "priceMed": "R$ 117,45",
+    "priceMax": "R$ 120,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305681_6867.jpg",
+    "productId": 28
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 99,00",
+    "priceMed": "R$ 112,07",
+    "priceMax": "R$ 120,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230210/1676051112_5843.jpg",
+    "productId": 29
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 109,99",
+    "priceMed": "R$ 117,92",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305731_1183.jpg",
+    "productId": 30
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 99,90",
+    "priceMed": "R$ 115,90",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305705_8696.jpg",
+    "productId": 31
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 119,90",
+    "priceMed": "R$ 119,90",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305580_904.jpg",
+    "productId": 32
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 109,99",
+    "priceMed": "R$ 117,92",
+    "priceMax": "R$ 119,90",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20230308/1678305628_4370.jpg",
+    "productId": 33
+  },
+  {
+    "name": "",
+    "nameAux": "",
+    "priceMin": "R$ 90,00",
+    "priceMed": "R$ 90,00",
+    "priceMax": "R$ 90,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/up/prod/20210714/1626293708_3612.jpg",
+    "productId": 34
+  },
+  {
+    "name": "\n                                \n                                 Campeão da Forja Rúnica\n                            ",
+    "nameAux": "Runeforge Champion",
+    "priceMin": "R$ 0,49",
+    "priceMed": "R$ 1,99",
+    "priceMax": "R$ 22,50",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479835/600854d907dc1-tulae-gqwxj-446738877600854d907e1d.jpg",
+    "productId": 35
+  },
+  {
+    "name": "\n                                \n                                 Cantor de Forja Anão\n                            ",
+    "nameAux": "Dwarven Forge-Chanter",
+    "priceMin": "R$ 0,30",
+    "priceMed": "R$ 2,34",
+    "priceMax": "R$ 3,00",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480040/63656b18dafa3-0qylj-ebfu5-203639427863656b18dafe3.jpg",
+    "productId": 36
+  },
+  {
+    "name": "\n                                \n                                 Carniceiro Gorja da Morte\n                            ",
+    "nameAux": "Deathgorge Scavenger",
+    "priceMin": "R$ 0,23",
+    "priceMed": "R$ 1,65",
+    "priceMax": "R$ 6,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/247714/625092dd9983f-36opw-7w6g1-1525268660625092dd99884.jpg",
+    "productId": 37
+  },
+  {
+    "name": "\n                                \n                                 Caverna Esquecida\n                            ",
+    "nameAux": "Forgotten Cave",
+    "priceMin": "R$ 0,15",
+    "priceMed": "R$ 1,15",
+    "priceMax": "R$ 9,95",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480178/63d3f00d39285-v427j-64zsf-43479214063d3f00d392c9.jpg",
+    "productId": 38
+  },
+  {
+    "name": "\n                                \n                                 Centurião do Malho-forja\n                            ",
+    "nameAux": "Forgehammer Centurion",
+    "priceMin": "R$ 0,05",
+    "priceMed": "R$ 0,38",
+    "priceMax": "R$ 1,31",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ac8dd65d6-uzep4-mur3i-46452709063d3ac8dd6621.jpg",
+    "productId": 39
+  }
+]

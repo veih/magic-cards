@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { Loading } from "../components/Loading";
 
 type WSResults = {
+  props: any;
   id: string;
   name: string;
   nameAux: string;
@@ -15,7 +16,25 @@ type WSResults = {
   imageUrl: any;
 };
 
-export default function Home() {
+export async function getStaticProps() {
+  const data = await fetch("/data");
+  const cards = await data.json();
+
+  return {
+    props: { cards },
+  };
+}
+
+export async function getServerSideProps() {
+  const searchData = await fetch("/data");
+  const searchResults = await searchData.json();
+
+  return {
+    props: { searchResults },
+  };
+}
+
+export default function Home(props: { cards: any; searchResults: WSResults[] }) {
   const [searchPrompt, setSearchPrompt] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -42,14 +61,14 @@ export default function Home() {
     event.preventDefault();
     setSearchResults([]);
 
-    const products = await fetchData(searchPrompt);
-    setSearchResults(products);
+    const cards: any = await fetchData(searchPrompt, props.cards);
+    setSearchResults(cards);
     setSearchPrompt("");
     setIsLoading(false);
   };
 
-  const handleMouseMove = (e: { currentTarget: { querySelector: (arg0: string) => any; }; clientX: number; clientY: number; }) => {
-    const cardImage = e.currentTarget.querySelector('.card-image');
+  const handleMouseMove = (e: { currentTarget: { querySelector: (arg0: string) => any }; clientX: number; clientY: number }) => {
+    const cardImage = e.currentTarget.querySelector(".card-image");
     const rect = cardImage.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
@@ -63,9 +82,9 @@ export default function Home() {
     cardImage.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
 
-  const handleMouseLeave = (e: { currentTarget: { querySelector: (arg0: string) => any; }; }) => {
-    const cardImage = e.currentTarget.querySelector('.card-image');
-    cardImage.style.transform = 'none';
+  const handleMouseLeave = (e: { currentTarget: { querySelector: (arg0: string) => any } }) => {
+    const cardImage = e.currentTarget.querySelector(".card-image");
+    cardImage.style.transform = "none";
   };
 
   return (
@@ -94,7 +113,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mb-3">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-            <div className="relative h-120 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="relative h-120 w-80 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={"Sem imagem"}
@@ -103,7 +122,10 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col">
-              <a className="text-white text-center mt-1" href="https://www.ligamagic.com.br/">Liga Magic</a>
+              <a className="text-white text-center mt-1" href="https://www.ligamagic.com.br/">
+                Liga Magic
+              </a>
+              <p className="text-white text-center mt-2">{prod.nameAux}</p>
               <table className="mt-1">
                 <tbody>
                   <tr>
@@ -121,6 +143,7 @@ export default function Home() {
                 </tbody>
               </table>
               <p className="text-white text-center mt-1">Star City</p>
+              <p className="text-white text-center mt-2">{prod.nameAux}</p>
               <table className="mt-1">
                 <tbody>
                   <tr>
@@ -138,6 +161,7 @@ export default function Home() {
                 </tbody>
               </table>
               <p className="text-white text-center mt-1">Magic Domen</p>
+              <p className="text-white text-center mt-2">{prod.nameAux}</p>
               <table className="mt-1">
                 <tbody>
                   <tr>

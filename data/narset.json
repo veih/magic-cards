@@ -11,8 +11,8 @@
   {
     "name": "\n                                \n                                 Emblema - Narset (DTK)\n                            ",
     "nameAux": "Emblem - Narset (DTK)",
-    "priceMin": "R$ 0,49",
-    "priceMed": "R$ 2,78",
+    "priceMin": "R$ 0,20",
+    "priceMed": "R$ 2,76",
     "priceMax": "R$ 5,00",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/19027/5f4243e1ba2a7-5o908j-c2lo68-911d72c721118cd48928307d704bca82.jpg",
     "productId": 1
@@ -21,7 +21,7 @@
     "name": "\n                                \n                                 Narset do Caminho Antigo\n                            ",
     "nameAux": "Narset of the Ancient Way",
     "priceMin": "R$ 3,90",
-    "priceMed": "R$ 12,60",
+    "priceMed": "R$ 12,70",
     "priceMax": "R$ 69,98",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f42444166855-g3h27c-1zqtyp-0336dcbab05b9d5ad24f4333c7658a0e.jpg",
     "productId": 2
@@ -30,7 +30,7 @@
     "name": "\n                                \n                                 Narset do Caminho Antigo Emblema\n                            ",
     "nameAux": "Narset of the Ancient Way Emblem",
     "priceMin": "R$ 0,39",
-    "priceMed": "R$ 1,95",
+    "priceMed": "R$ 1,93",
     "priceMax": "R$ 5,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f424440bd0c1-owgyql-z4rxhd-72963b0e4d3e9a1c0e511dfb1ec25aab.jpg",
     "productId": 3
@@ -48,7 +48,7 @@
     "name": "\n                                \n                                 Narset, Exilada Iluminada\n                            ",
     "nameAux": "Narset, Enlightened Exile",
     "priceMin": "R$ 43,90",
-    "priceMed": "R$ 82,89",
+    "priceMed": "R$ 82,98",
     "priceMax": "R$ 155,00",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480213/645266fed8f18-v8o26-kezdw-1545053794645266fed8f59.jpg",
     "productId": 5
@@ -57,8 +57,8 @@
     "name": "\n                                \n                                 Narset, Mestra Iluminada\n                            ",
     "nameAux": "Narset, Enlightened Master",
     "priceMin": "R$ 3,89",
-    "priceMed": "R$ 68,20",
-    "priceMax": "R$ 464,99",
+    "priceMed": "R$ 68,17",
+    "priceMax": "R$ 449,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/530/625038316fd3c-xjf4t-vnqyt-1565175175625038316fd86.jpg",
     "productId": 6
   },
@@ -66,7 +66,7 @@
     "name": "\n                                \n                                 Narset, Rasgadora de Véus\n                            ",
     "nameAux": "Narset, Parter of Veils",
     "priceMin": "R$ 4,12",
-    "priceMed": "R$ 162,67",
+    "priceMed": "R$ 162,64",
     "priceMax": "R$ 2.999,90",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479759/5f42442d13779-1bp6n8-u75iw9-7f39f8317fbdb1988ef4c628eba02591.jpg",
     "productId": 7
@@ -84,7 +84,7 @@
     "name": "\n                                \n                                 Reversão de Narset\n                            ",
     "nameAux": "Narset's Reversal",
     "priceMin": "R$ 27,99",
-    "priceMed": "R$ 48,23",
+    "priceMed": "R$ 48,12",
     "priceMax": "R$ 75,34",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479759/5f42442c8fbd6-x4usdc-05mvbh-44f683a84163b3523afe57c2e008bc8c.jpg",
     "productId": 9

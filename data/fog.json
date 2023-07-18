@@ -20,7 +20,7 @@
   {
     "name": "\n                                \n                                 Afogador da Esperança\n                            ",
     "nameAux": "Drowner of Hope",
-    "priceMin": "R$ 0,18",
+    "priceMin": "R$ 0,17",
     "priceMed": "R$ 2,67",
     "priceMax": "R$ 14,98",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/67044/6307c86ddfc00-7lnkh-307aw-14438033736307c86ddfc3f.jpg",
@@ -47,7 +47,7 @@
   {
     "name": "\n                                \n                                 Afogar em Icor\n                            ",
     "nameAux": "Drown in Ichor",
-    "priceMin": "R$ 1,25",
+    "priceMin": "R$ 1,24",
     "priceMed": "R$ 2,78",
     "priceMax": "R$ 4,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ac6d8254f-9vpr7-dvy3j-114991175963d3ac6d82595.jpg",
@@ -84,7 +84,7 @@
     "name": "\n                                \n                                 Afogar no Lago\n                            ",
     "nameAux": "Drown in the Loch",
     "priceMin": "R$ 4,00",
-    "priceMed": "R$ 10,75",
+    "priceMed": "R$ 10,82",
     "priceMax": "R$ 198,00",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/62979877897e4-m0ght-frxmd-9694040486297987789853.jpg",
     "productId": 9
@@ -173,7 +173,7 @@
   {
     "name": "\n                                \n                                 Artista da Lâmina de Fogo\n                            ",
     "nameAux": "Fireblade Artist",
-    "priceMin": "R$ 0,10",
+    "priceMin": "R$ 0,09",
     "priceMed": "R$ 0,56",
     "priceMax": "R$ 4,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479945/62aceded78409-t9ivn-0drqy-178608266362aceded7844d.jpg",
@@ -228,7 +228,7 @@
     "name": "\n                                \n                                 Banco de Nevoeiro\n                            ",
     "nameAux": "Fog Bank",
     "priceMin": "R$ 0,25",
-    "priceMed": "R$ 1,43",
+    "priceMed": "R$ 1,41",
     "priceMax": "R$ 3,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480098/6349d5d0dd664-e0gma-x4f9p-6014484346349d5d0dd6aa.jpg",
     "productId": 25
@@ -247,7 +247,7 @@
     "nameAux": "Ætherflame Wall",
     "priceMin": "R$ 0,05",
     "priceMed": "R$ 0,45",
-    "priceMax": "R$ 3,00",
+    "priceMax": "R$ 2,40",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/191/5f42433d72809-syc76b-nlp62x-a8baa56554f96369ab93e4f3bb068c22.jpg",
     "productId": 27
   },
@@ -263,7 +263,7 @@
   {
     "name": "\n                                \n                                 Basal Thrull (Phil Foglio)\n                            ",
     "nameAux": "",
-    "priceMin": "R$ 0,45",
+    "priceMin": "R$ 0,44",
     "priceMed": "R$ 1,25",
     "priceMax": "R$ 3,75",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/224/5f424367bc61a-c3vz65-tcv9kx-440bb92452f79c259f244870d08f2b8f.jpg",
@@ -282,7 +282,7 @@
     "name": "\n                                \n                                 Batalha de Geada e Fogo\n                            ",
     "nameAux": "Battle of Frost and Fire",
     "priceMin": "R$ 0,43",
-    "priceMed": "R$ 1,62",
+    "priceMed": "R$ 1,61",
     "priceMax": "R$ 5,50",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/600075fa791a7-rathd-ady3n-1720470152600075fa7922a.jpg",
     "productId": 31
@@ -299,7 +299,7 @@
   {
     "name": "\n                                \n                                 Bola de Fogo\n                            ",
     "nameAux": "Fireball",
-    "priceMin": "R$ 0,05",
+    "priceMin": "R$ 0,04",
     "priceMed": "R$ 2,50",
     "priceMax": "R$ 1.899,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/6285173384bd0-13xg0-j9pig-4531653296285173384c11.jpg",
@@ -345,7 +345,7 @@
     "name": "\n                                \n                                 Bola de Fogo Adiável\n                            ",
     "nameAux": "Delayed Blast Fireball",
     "priceMin": "R$ 47,49",
-    "priceMed": "R$ 60,25",
+    "priceMed": "R$ 60,22",
     "priceMax": "R$ 79,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/629793ab68117-fc2nw-1e9hc-1062182614629793ab68152.jpg",
     "productId": 38

@@ -56,8 +56,6 @@ export async function POST(request: Request): Promise<Response> {
       return $(element).text();
     });
 
-
-
     const folderName = "./data";
     if (!fs.existsSync(folderName)) {
       fs.mkdirSync(folderName);
