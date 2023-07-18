@@ -62,7 +62,7 @@ export async function POST(request: Request): Promise<Response> {
     }
 
 
-    const fileName = `${userSearch}.json`;
+    const fileName = `cards.json`;
     const filePath = `${folderName}/${fileName}`;
 
 

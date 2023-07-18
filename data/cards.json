@@ -1,0 +1,20 @@
+[
+  {
+    "name": "\n                                \n                                 Narset do Caminho Antigo\n                            ",
+    "nameAux": "Narset of the Ancient Way",
+    "priceMin": "R$ 3,90",
+    "priceMed": "R$ 12,70",
+    "priceMax": "R$ 69,98",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f42444166855-g3h27c-1zqtyp-0336dcbab05b9d5ad24f4333c7658a0e.jpg",
+    "productId": 0
+  },
+  {
+    "name": "\n                                \n                                 Narset do Caminho Antigo Emblema\n                            ",
+    "nameAux": "Narset of the Ancient Way Emblem",
+    "priceMin": "R$ 0,39",
+    "priceMed": "R$ 1,93",
+    "priceMax": "R$ 5,99",
+    "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479795/5f424440bd0c1-owgyql-z4rxhd-72963b0e4d3e9a1c0e511dfb1ec25aab.jpg",
+    "productId": 1
+  }
+]
