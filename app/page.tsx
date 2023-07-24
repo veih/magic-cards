@@ -5,6 +5,7 @@ import { FormEvent, useState } from "react";
 import { Loading } from "../components/Loading";
 
 type WSResults = {
+  priceStarCity: String;
   props: any;
   id: string;
   name: string;
@@ -36,6 +37,7 @@ export async function getServerSideProps() {
 
 export default function Home(props: { cards: any; searchResults: WSResults[] }) {
   const [searchPrompt, setSearchPrompt] = useState("");
+  const [searchPromptStarCity, setSearchPromptStarCity] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -57,13 +59,34 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
     return products;
   };
 
+  const fetchDataStarCity = async (searchParam: string, nextPageStarCity?: number) => {
+    setIsLoading(true);
+
+    const response = await fetch("/searchproductsStarCity", {
+      method: "POST",
+      body: JSON.stringify({
+        searchPromptStarCity: searchParam,
+        searchPromptNextStarCity: nextPageStarCity,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const { productsStarCity } = await response.json();
+    return productsStarCity;
+  };
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSearchResults([]);
 
-    const cards: any = await fetchData(searchPrompt, props.cards);
-    setSearchResults(cards);
-    setSearchPrompt("");
+    const products: any = await fetchData(searchPrompt);
+    const productsStarCity: any = await fetchDataStarCity(searchPromptStarCity);
+    console.log(productsStarCity)
+    const Cards = [...products, ...productsStarCity];
+    setSearchResults(Cards);
+    setSearchPromptStarCity("");
     setIsLoading(false);
   };
 
@@ -87,6 +110,12 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
     cardImage.style.transform = "none";
   };
 
+  const handleChange = (e: { target: { value: any; }; }) => {
+    const value = e.target.value;
+    setSearchPrompt(value);
+    setSearchPromptStarCity(value);
+  };
+
   return (
     <main className="max-w-5xl mx-auto flex flex-col mt-4 justify-center">
       <div>
@@ -95,7 +124,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-2 my-4">
         <input
           value={searchPrompt}
-          onChange={(e) => setSearchPrompt(e.target.value)}
+          onChange={handleChange}
           type="text"
           placeholder="Cartas de magic..."
           className="px-2 bg-gray-800 text-white border border-gray-600 rounded-md outline-none"
@@ -113,7 +142,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mb-3">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-            <div className="relative h-120 w-80 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="relative h-100 w-80 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={"Sem imagem"}
@@ -148,15 +177,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
                 <tbody>
                   <tr>
                     <td className="text-white">Preço mínimo</td>
-                    <td className="text-white text-right">{prod.priceMin}</td>
-                  </tr>
-                  <tr>
-                    <td className="text-white">Preço médio</td>
-                    <td className="text-white text-right">{prod.priceMed}</td>
-                  </tr>
-                  <tr>
-                    <td className="text-white">Preço máximo</td>
-                    <td className="text-white text-right">{prod.priceMax}</td>
+                    <td className="text-white text-right">{prod.priceStarCity}</td>
                   </tr>
                 </tbody>
               </table>

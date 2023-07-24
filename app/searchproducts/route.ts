@@ -16,6 +16,7 @@ export async function POST(request: Request): Promise<Response> {
   let browser;
 
   try {
+    
     browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
     await page.goto("https://www.ligamagic.com.br");
