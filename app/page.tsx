@@ -142,7 +142,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mb-3">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-            <div className="relative h-100 w-80 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="relative h-100 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={"Sem imagem"}

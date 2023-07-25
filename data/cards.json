@@ -28,7 +28,7 @@
     "nameAux": "Gurmag Drowner",
     "priceMin": "R$ 0,05",
     "priceMed": "R$ 0,31",
-    "priceMax": "R$ 1,75",
+    "priceMax": "R$ 1,40",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/19027/631104e0d76c0-137j8-2fbyk-352841796631104e0d76fe.jpg"
   },
   {
@@ -43,15 +43,15 @@
     "name": "\n                                \n                                 Afogar em Icor\n                            ",
     "nameAux": "Drown in Ichor",
     "priceMin": "R$ 1,24",
-    "priceMed": "R$ 2,81",
-    "priceMax": "R$ 5,75",
+    "priceMed": "R$ 2,80",
+    "priceMax": "R$ 4,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480158/63d3ac6d8254f-9vpr7-dvy3j-114991175963d3ac6d82595.jpg"
   },
   {
     "name": "\n                                \n                                 Afogar em Mágoas\n                            ",
     "nameAux": "Drown in Sorrow",
     "priceMin": "R$ 0,15",
-    "priceMed": "R$ 0,86",
+    "priceMed": "R$ 0,83",
     "priceMax": "R$ 2,50",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/480263/64bac3491fcc3-6dt1f-tm8q7-211200490264bac3491fd0a.jpg"
   },
@@ -59,7 +59,7 @@
     "name": "\n                                \n                                 Afogar em Sonhos\n                            ",
     "nameAux": "Drown in Dreams",
     "priceMin": "R$ 30,48",
-    "priceMed": "R$ 43,86",
+    "priceMed": "R$ 43,81",
     "priceMax": "R$ 58,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479872/6140c554e4e9e-2noc6-2oq0b-20205039346140c554e4edd.jpg"
   },
@@ -68,14 +68,14 @@
     "nameAux": "Drown in Filth",
     "priceMin": "R$ 0,05",
     "priceMed": "R$ 0,34",
-    "priceMax": "R$ 1,31",
+    "priceMax": "R$ 1,18",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/331/6318ff98e0d73-3nw5k-a3d4o-17899361016318ff98e0db4.jpg"
   },
   {
     "name": "\n                                \n                                 Afogar no Lago\n                            ",
     "nameAux": "Drown in the Loch",
     "priceMin": "R$ 3,00",
-    "priceMed": "R$ 10,80",
+    "priceMed": "R$ 10,73",
     "priceMax": "R$ 198,00",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/62979877897e4-m0ght-frxmd-9694040486297987789853.jpg"
   },
@@ -108,7 +108,7 @@
     "nameAux": "Fogwalker",
     "priceMin": "R$ 0,08",
     "priceMed": "R$ 0,36",
-    "priceMax": "R$ 1,75",
+    "priceMax": "R$ 1,40",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/81713/626717812f374-35mke-cfhsa-758359167626717812f3bd.jpg"
   },
   {
@@ -139,7 +139,7 @@
     "name": "\n                                \n                                 Anjo Cabeleira de Fogo\n                            ",
     "nameAux": "Firemane Angel",
     "priceMin": "R$ 0,30",
-    "priceMed": "R$ 1,50",
+    "priceMed": "R$ 1,51",
     "priceMax": "R$ 3,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479828/607df72ab3be4-thrm7-pu0nk-1406911299607df72ab3c36.jpg"
   },
@@ -148,7 +148,7 @@
     "nameAux": "Burn at the Stake",
     "priceMin": "R$ 2,97",
     "priceMed": "R$ 6,29",
-    "priceMax": "R$ 9,72",
+    "priceMax": "R$ 9,00",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/320/6319047ce089d-6d9yx-p9ih1-6199841966319047ce08e2.jpg"
   },
   {
@@ -251,7 +251,7 @@
     "name": "\n                                \n                                 Batalha de Geada e Fogo\n                            ",
     "nameAux": "Battle of Frost and Fire",
     "priceMin": "R$ 0,43",
-    "priceMed": "R$ 1,62",
+    "priceMed": "R$ 1,61",
     "priceMax": "R$ 5,50",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479834/600075fa791a7-rathd-ady3n-1720470152600075fa7922a.jpg"
   },
@@ -267,7 +267,7 @@
     "name": "\n                                \n                                 Bola de Fogo\n                            ",
     "nameAux": "Fireball",
     "priceMin": "R$ 0,04",
-    "priceMed": "R$ 2,57",
+    "priceMed": "R$ 2,54",
     "priceMax": "R$ 1.899,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/6285173384bd0-13xg0-j9pig-4531653296285173384c11.jpg"
   },
@@ -307,7 +307,7 @@
     "name": "\n                                \n                                 Bola de Fogo Adiável\n                            ",
     "nameAux": "Delayed Blast Fireball",
     "priceMin": "R$ 38,32",
-    "priceMed": "R$ 60,02",
+    "priceMed": "R$ 60,37",
     "priceMax": "R$ 79,99",
     "imageUrl": "//repositorio.sbrauble.com/arquivos/in/magic/479911/629793ab68117-fc2nw-1e9hc-1062182614629793ab68152.jpg"
   },
