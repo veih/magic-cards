@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["repositorio.sbrauble.com"],
+		domains: ["repositorio.sbrauble.com", "cdn11.bigcommerce.com"], 
 	},
 };
 

@@ -4,9 +4,9 @@ import * as cheerio from "cheerio";
 import fs from "fs";
 
 export async function POST(request: Request): Promise<Response> {
-  const { searchPromptStarCity: userSearchStarCity, searchPromptNextStarCity: nextPageStarCity } = await request.json();
+  const { searchPrompt: userSearch, searchPromptNext: nextPage } = await request.json();
 
-  if (!userSearchStarCity && nextPageStarCity === undefined) {
+  if (!userSearch && nextPage === undefined) {
     return NextResponse.json(
       { error: "Search parameter not provided" },
       { status: 400 }
@@ -20,12 +20,12 @@ export async function POST(request: Request): Promise<Response> {
       const page = await browser.newPage();
       await page.goto("https://starcitygames.com");
 
-      await page.type("#search_query", userSearchStarCity);
+      await page.type("#search_query", userSearch);
       await page.keyboard.press("Enter");
 
-    if (nextPageStarCity !== undefined) {
+    if (nextPage !== undefined) {
       const paginationButtons = await page.$$(".result-paginacao > span > a");
-      await paginationButtons[nextPageStarCity].click();
+      await paginationButtons[nextPage].click();
     }
 
     await page.waitForNavigation();
@@ -35,9 +35,8 @@ export async function POST(request: Request): Promise<Response> {
 
     const productsStarCity: any = [];
 
-    const mtgSingle = $(".ui-sortable").map((index, element) => {
-      console.log(mtgSingle)
-      const price = $(element).find(".price-wrapper .hawk-results-item__options-table-cell  .hawk-results-item__options-table-cell--price .childAttributes");
+    const mtgSingleStarCity = $(".ui-sortable").map((index, element) => {
+      const price = $(element).find(".hawk-results-item__options-table-cell--price");
 
       const items = {
         priceStarCity: $(price[0]).text(),
@@ -65,7 +64,7 @@ export async function POST(request: Request): Promise<Response> {
 
     let updatedData: any[];
 
-    if (nextPageStarCity !== undefined) {
+    if (nextPage !== undefined) {
       updatedData = [...existingData, ...productsStarCity];
     } else {
       updatedData = productsStarCity;

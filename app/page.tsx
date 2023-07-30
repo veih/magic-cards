@@ -59,14 +59,14 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
     return products;
   };
 
-  const fetchDataStarCity = async (searchParam: string, nextPageStarCity?: number) => {
+  const fetchDataStarCity = async (searchParam: string, nextPage?: number) => {
     setIsLoading(true);
 
     const response = await fetch("/searchproductsStarCity", {
       method: "POST",
       body: JSON.stringify({
-        searchPromptStarCity: searchParam,
-        searchPromptNextStarCity: nextPageStarCity,
+        searchPrompt: searchParam,
+        searchPromptNext: nextPage,
       }),
       headers: {
         "Content-Type": "application/json",
