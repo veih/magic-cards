@@ -17,28 +17,10 @@ type WSResults = {
   imageUrl: any;
 };
 
-export async function getStaticProps() {
-  const data = await fetch("/data");
-  const cards = await data.json();
-
-  return {
-    props: { cards },
-  };
-}
-
-export async function getServerSideProps() {
-  const searchData = await fetch("/data");
-  const searchResults = await searchData.json();
-
-  return {
-    props: { searchResults },
-  };
-}
-
 export default function Home(props: { cards: any; searchResults: WSResults[] }) {
   const [searchPrompt, setSearchPrompt] = useState("");
-  const [searchPromptStarCity, setSearchPromptStarCity] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
+  const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResults[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async (searchParam: string, nextPage?: number) => {
@@ -82,11 +64,10 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
     setSearchResults([]);
 
     const products: any = await fetchData(searchPrompt);
-    const productsStarCity: any = await fetchDataStarCity(searchPromptStarCity);
-    console.log(productsStarCity)
-    const Cards = [...products, ...productsStarCity];
-    setSearchResults(Cards);
-    setSearchPromptStarCity("");
+    const productsStarCitys: any = await fetchDataStarCity(searchPrompt);
+
+    setSearchResultsStarcity(productsStarCitys)
+    setSearchResults(products);
     setIsLoading(false);
   };
 
@@ -113,7 +94,6 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
   const handleChange = (e: { target: { value: any; }; }) => {
     const value = e.target.value;
     setSearchPrompt(value);
-    setSearchPromptStarCity(value);
   };
 
   return (
@@ -142,7 +122,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 mb-3">
         {searchResults.map((prod, i) => (
           <div key={i} className="bg-gray-700 p-5 rounded-lg grid grid-cols-2 gap-2 justify-center">
-            <div className="relative h-100 w-60 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="relative h-60 w-40 mt-2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <Image
                 src={prod.imageUrl.startsWith("//") ? "https:" + prod.imageUrl : prod.imageUrl}
                 alt={"Sem imagem"}
@@ -171,16 +151,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
                   </tr>
                 </tbody>
               </table>
-              <p className="text-white text-center mt-1">Star City</p>
-              <p className="text-white text-center mt-2">{prod.nameAux}</p>
-              <table className="mt-1">
-                <tbody>
-                  <tr>
-                    <td className="text-white">Preço mínimo</td>
-                    <td className="text-white text-right">{prod.priceStarCity}</td>
-                  </tr>
-                </tbody>
-              </table>
+              
               <p className="text-white text-center mt-1">Magic Domen</p>
               <p className="text-white text-center mt-2">{prod.nameAux}</p>
               <table className="mt-1">
@@ -201,6 +172,18 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
               </table>
             </div>
           </div>
+        ))}
+        {searchResultsStarcity.map((prod, i) => (
+          <div className="text-white text-right" key={i}><p className="text-white text-center mt-1">Star City</p>
+              {/* <p className="text-white text-center mt-2">{prod.nameAux}</p> */}
+              <table className="mt-1">
+                <tbody>
+                  <tr>
+                    <td className="text-white">Preço</td>
+                    <td className="text-white text-right">{prod.priceStarCity}</td>
+                  </tr>
+                </tbody>
+              </table></div>
         ))}
       </div>
     </main>

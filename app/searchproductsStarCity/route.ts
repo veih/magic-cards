@@ -18,7 +18,7 @@ export async function POST(request: Request): Promise<Response> {
   try {
       browser = await puppeteer.launch({ headless: "new" });
       const page = await browser.newPage();
-      await page.goto("https://starcitygames.com");
+      await page.goto("https://starcitygames.com/search");
 
       await page.type("#search_query", userSearch);
       await page.keyboard.press("Enter");
@@ -32,22 +32,25 @@ export async function POST(request: Request): Promise<Response> {
 
     const html = await page.content();
     const $ = cheerio.load(html);
+    
+    const productsStarCitys: any = [];
 
-    const productsStarCity: any = [];
+    $(".hawk-results-item").each((index, element) => {
 
-    const mtgSingleStarCity = $(".ui-sortable").map((index, element) => {
-      const price = $(element).find(".hawk-results-item__options-table-cell--price");
+      const priceStarCity = $(element).find(".price-wrapper");
 
+      
       const items = {
-        priceStarCity: $(price[0]).text(),
+
+        priceStarCity: $(priceStarCity[0]).text().trim(),
+
       };
-
-      const productStarCity = { ...items };
-
-      productsStarCity.push(productStarCity);
+      
+      productsStarCitys.push(items);
+      
       return $(element).text();
     });
-
+    
     const folderName = "./data";
     if (!fs.existsSync(folderName)) {
       fs.mkdirSync(folderName);
@@ -65,13 +68,13 @@ export async function POST(request: Request): Promise<Response> {
     let updatedData: any[];
 
     if (nextPage !== undefined) {
-      updatedData = [...existingData, ...productsStarCity];
+      updatedData = [...existingData, ...productsStarCitys];
     } else {
-      updatedData = productsStarCity;
+      updatedData = productsStarCitys;
     }
 
-    const uniqueProductsStarCity = updatedData.reduce((unique: any[], item: any) => {
-      const found = unique.find((prod) => prod.name === item.name);
+    const uniqueProductsStarCity = productsStarCitys.reduce((unique: any[], item: any) => {
+      const found = unique.find((prod) => prod.priceStarCity === item.priceStarCity);
       if (!found) {
         unique.push(item);
       }
@@ -82,6 +85,7 @@ export async function POST(request: Request): Promise<Response> {
     fs.writeFileSync(filePath, jsonData);
 
     return NextResponse.json({ productsStarCity: uniqueProductsStarCity });
+
   } catch (error: any) {
     return NextResponse.json(
       { error: `An error occurred: ${error.message}` },
