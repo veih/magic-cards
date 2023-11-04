@@ -16,12 +16,12 @@ export async function POST(request: Request): Promise<Response> {
   let browser;
 
   try {
-      browser = await puppeteer.launch({ headless: "new" });
-      const page = await browser.newPage();
-      await page.goto("https://starcitygames.com/search");
+    browser = await puppeteer.launch({ headless: "new" });
+    const page = await browser.newPage();
+    await page.goto("https://starcitygames.com/search");
 
-      await page.type("#search_query", userSearch);
-      await page.keyboard.press("Enter");
+    await page.type("#search_query", userSearch);
+    await page.keyboard.press("Enter");
 
     if (nextPage !== undefined) {
       const paginationButtons = await page.$$(".result-paginacao.ui-sortable item-list.list-layout");
@@ -32,25 +32,27 @@ export async function POST(request: Request): Promise<Response> {
 
     const html = await page.content();
     const $ = cheerio.load(html);
-    
+
     const productsStarCitys: any = [];
-console.log($)
-    $(".item-body.hawk-results-item__body").each((index, element) => {
+    
+    const myStacity = $(".item-body.hawk-results-item__body").each((index, element) => {
 
-      const priceStarCity = $(element).find(".price-wrapper.hawk-results-item__options-table-cell.hawk-results-item__options-table-cell--price.childAttributes");
+      const priceStarCity = $(element).find(".hawk-results-item__options-table-cell--price.childAttributes");
 
-      
+
       const items = {
 
         priceStarCity: $(priceStarCity[0]).text().trim(),
 
       };
-      
+
       productsStarCitys.push(items);
-      
+
       return $(element).text();
     });
-    
+
+    console.log(myStacity)
+
     const folderName = "./data";
     if (!fs.existsSync(folderName)) {
       fs.mkdirSync(folderName);

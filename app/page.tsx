@@ -17,10 +17,22 @@ type WSResults = {
   imageUrl: any;
 };
 
+type WSResultsStacity = {
+  priceStarCity: String;
+  props: any;
+  id: string;
+  name: string;
+  nameAux: string;
+  priceMin: string;
+  priceMed: string;
+  priceMax: string;
+  title: string;
+  imageUrl: any;
+};
 export default function Home() {
   const [searchPrompt, setSearchPrompt] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
-  const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResults[]>([]);
+  const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResultsStacity[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async (searchParam: string, nextPage?: number) => {
@@ -65,7 +77,6 @@ export default function Home() {
 
     const products: any = await fetchData(searchPrompt);
     const productsStarCitys: any = await fetchDataStarCity(searchPrompt);
-console.log(productsStarCitys)
     setSearchResultsStarcity(productsStarCitys)
     setSearchResults(products);
     setIsLoading(false);
