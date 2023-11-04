@@ -17,7 +17,7 @@ type WSResults = {
   imageUrl: any;
 };
 
-export default function Home(props: { cards: any; searchResults: WSResults[] }) {
+export default function Home() {
   const [searchPrompt, setSearchPrompt] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
   const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResults[]>([]);
@@ -55,8 +55,8 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
       },
     });
 
-    const { productsStarCity } = await response.json();
-    return productsStarCity;
+    const { productsStarCitys } = await response.json();
+    return productsStarCitys;
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -65,7 +65,7 @@ export default function Home(props: { cards: any; searchResults: WSResults[] }) 
 
     const products: any = await fetchData(searchPrompt);
     const productsStarCitys: any = await fetchDataStarCity(searchPrompt);
-
+console.log(productsStarCitys)
     setSearchResultsStarcity(productsStarCitys)
     setSearchResults(products);
     setIsLoading(false);

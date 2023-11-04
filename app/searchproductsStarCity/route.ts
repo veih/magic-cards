@@ -24,7 +24,7 @@ export async function POST(request: Request): Promise<Response> {
       await page.keyboard.press("Enter");
 
     if (nextPage !== undefined) {
-      const paginationButtons = await page.$$(".result-paginacao > span > a");
+      const paginationButtons = await page.$$(".result-paginacao.ui-sortable item-list.list-layout");
       await paginationButtons[nextPage].click();
     }
 
@@ -34,10 +34,10 @@ export async function POST(request: Request): Promise<Response> {
     const $ = cheerio.load(html);
     
     const productsStarCitys: any = [];
+console.log($)
+    $(".item-body.hawk-results-item__body").each((index, element) => {
 
-    $(".hawk-results-item").each((index, element) => {
-
-      const priceStarCity = $(element).find(".price-wrapper");
+      const priceStarCity = $(element).find(".price-wrapper.hawk-results-item__options-table-cell.hawk-results-item__options-table-cell--price.childAttributes");
 
       
       const items = {
@@ -73,7 +73,7 @@ export async function POST(request: Request): Promise<Response> {
       updatedData = productsStarCitys;
     }
 
-    const uniqueProductsStarCity = productsStarCitys.reduce((unique: any[], item: any) => {
+    const uniqueProductsStarCitys = updatedData.reduce((unique: any[], item: any) => {
       const found = unique.find((prod) => prod.priceStarCity === item.priceStarCity);
       if (!found) {
         unique.push(item);
@@ -81,10 +81,10 @@ export async function POST(request: Request): Promise<Response> {
       return unique;
     }, []);
 
-    const jsonData = JSON.stringify(uniqueProductsStarCity, null, 2);
+    const jsonData = JSON.stringify(uniqueProductsStarCitys, null, 2);
     fs.writeFileSync(filePath, jsonData);
 
-    return NextResponse.json({ productsStarCity: uniqueProductsStarCity });
+    return NextResponse.json({ productsStarCity: uniqueProductsStarCitys });
 
   } catch (error: any) {
     return NextResponse.json(
