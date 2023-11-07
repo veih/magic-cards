@@ -37,7 +37,7 @@ export async function POST(request: Request): Promise<Response> {
     
     const myStacity = $(".item-body.hawk-results-item__body").each((index, element) => {
 
-      const priceStarCity = $(element).find(".hawk-results-item__options-table-cell--price.childAttributes");
+      const priceStarCity = $(element).find(".hawk-results-item__options-table-cell--price");
 
 
       const items = {
@@ -46,7 +46,9 @@ export async function POST(request: Request): Promise<Response> {
 
       };
 
-      productsStarCitys.push(items);
+      const product = { ...items };
+      
+      productsStarCitys.push(product);
 
       return $(element).text();
     });

@@ -15,24 +15,13 @@ type WSResults = {
   priceMax: string;
   title: string;
   imageUrl: any;
+  
 };
 
-type WSResultsStacity = {
-  priceStarCity: String;
-  props: any;
-  id: string;
-  name: string;
-  nameAux: string;
-  priceMin: string;
-  priceMed: string;
-  priceMax: string;
-  title: string;
-  imageUrl: any;
-};
 export default function Home() {
   const [searchPrompt, setSearchPrompt] = useState("");
   const [searchResults, setSearchResults] = useState<WSResults[]>([]);
-  const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResultsStacity[]>([]);
+  const [searchResultsStarcity, setSearchResultsStarcity] = useState<WSResults[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async (searchParam: string, nextPage?: number) => {
